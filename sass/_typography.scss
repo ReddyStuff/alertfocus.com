@@ -1,0 +1,29 @@
+@font-face {
+  font-family:'Futura Today';
+  src:url(resources/futura_today_normal.eot);
+  src:url(resources/futura_today_normal.eot?#iefix) format('embedded-opentype'),
+      url(resources/futura_today_normal.woff) format('woff'),
+      url(resources/futura_today_normal.ttf) format('truetype'),
+      url(resources/futura_bold-webfont.svg#FuturaBold) format('svg');
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'Futura Today Bold';
+  src:url(resources/futura_today_bold.eot);
+  src:url(resources/futura_today_bold.eot?#iefix) format('embedded-opentype'),
+      url(resources/futura_today_bold.woff) format('woff'),
+      url(resources/futura_today_bold.ttf) format('truetype'),
+      url(resources/futura_bold-webfont.svg#FuturaBold) format('svg');
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'Futura Today Light';
+  src:url(resources/futura_today_light.eot);
+  src:url(resources/futura_today_light.eot?#iefix) format('embedded-opentype'),
+      url(resources/futura_today_light.woff) format('woff'),
+      url(resources/futura_today_light.ttf) format('truetype'),
+      url(resources/futura_today_light.svg#FuturaLight) format('svg');
+  font-style:light;
+}

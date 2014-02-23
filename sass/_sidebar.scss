@@ -1,0 +1,273 @@
+.sidebar {
+  bottom: 0;
+  background: #262626;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%!important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 240px;
+  z-index: 4;
+  &.top {
+    border-left: 1px solid #3b3b3b;
+    z-index: 60;
+  }
+  .shadow {
+    background: transparent;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .top-shadow {
+    box-shadow: 0 -4px 12px 3px rgba(0, 0, 0, 0.3);
+    top: 0;
+  }
+  .bottom-shadow {
+    bottom: 0;
+    box-shadow: 0 2px 11px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .sidebar-button {
+    visibility: hidden;
+    &:visited {
+      visibility: hidden;
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .sidebar {
+    width: 340px;
+  }
+}
+
+.sidebar-header {
+  display: block;
+  -webkit-transition: width .25s ease-out;
+  -moz-transition: width .25s ease-out;
+  -ms-transition: width .25s ease-out;
+  -o-transition: width .25s ease-out;
+  transition: width .25s ease-out;
+  border-bottom: 1px solid #dedede;
+  width: 100%;
+  height: 13px;
+  overflow: hidden;
+  color: #999;
+  font-family: 'Futura Today Bold',Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 13px;
+  margin: 0;
+  padding: 14px 0 10px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  text-transform: uppercase;
+}
+
+.sidebar-button {
+  color: #fff;
+  display: block;
+  font-family: 'Futura Today Bold',Arial,sans-serif;
+  font-size: 11px;
+  height: 45px;
+  letter-spacing: 1px;
+  line-height: 29px;
+  position: absolute;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  z-index: 25;
+  &:hover, &:visited {
+    color: #fff;
+    display: block;
+    font-family: 'Futura Today Bold',Arial,sans-serif;
+    font-size: 11px;
+    height: 45px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    position: absolute;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    z-index: 25;
+  }
+}
+
+.open-sidebar {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 32px;
+  right: -13px;
+  top: -14px;
+  width: 82px;
+  > .icon {
+    background: transparent url(modules/live-feed/sprite.png) 0 -96px no-repeat;
+    height: 11px;
+    position: absolute;
+    width: 12px;
+    top: 9px;
+    left: 15px;
+  }
+}
+
+.close-sidebar {
+  background: transparent url(modules/live-feed/sprite.png) 0 -48px no-repeat;
+  padding: 0;
+  left: -12px;
+  top: -14px;
+  width: 44px;
+}
+
+.partner-sidebar-ad {
+  overflow: visible;
+  padding: 20px;
+}
+
+.sidebar-ad-iframe {
+  display: block;
+}
+
+.close-sidebar > .icon {
+  background: transparent url(modules/live-feed/sprite.png) -60px -146px no-repeat;
+  height: 21px;
+  position: absolute;
+  width: 20px;
+  top: 6px;
+  left: 11px;
+}
+
+.sidebar-button.hide {
+  display: none;
+  &:visited {
+    display: none;
+  }
+}
+
+.sidebar-scrollable-window {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar-wrapper {
+  bottom: 0;
+  overflow: hidden;
+  padding-bottom: 36px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.sidebar-scrollable-content {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.partner-sidebar-ad {
+  border-bottom: 1px solid #333;
+}
+
+.sidebar.light {
+  background: #f2f2f2;
+  border-color: #dedede;
+  &.top {
+    border-left: 1px solid #dcdcdc;
+  }
+  .sidebar-scrollable-window {
+    background: none repeat scroll 0 0 #f9f9f9;
+    height: 100%!important;
+  }
+  .sidebar-title {
+    color: #999;
+    text-shadow: 0 1px 1px #fff;
+  }
+  .sider-bar-loading {
+    background: url(windmill-loader_1x_light.gif) no-repeat 50% 0 transparent;
+  }
+  .partner-sidebar-ad {
+    border-bottom: 1px solid #dfdfdf;
+  }
+}
+
+.sidebar-static-title-wrapper {
+  display: none;
+  background-color: #222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #242424;
+  min-height: 14px;
+  padding: 11px 0;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar-title-wrapper {
+  background-color: #222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #242424;
+  min-height: 14px;
+  padding: 11px 0;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar.light {
+  .sidebar-static-title-wrapper, .sidebar-title-wrapper {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 0;
+  }
+}
+
+.sidebar-title {
+  color: #d2d2d2;
+  font-family: 'Futura Today Bold',Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 1px #000;
+  text-transform: uppercase;
+}
+
+.sidebar-static-title {
+  color: #fff;
+}
+
+a.sidebar-promo-link {
+  background: url(sidebar-promo-divider.jpg) no-repeat 0 0 #101010;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 11px 13px 11px 17px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:hover {
+    color: #c8c8c8;
+  }
+}
+
+.sidebar.light {
+  a.sidebar-promo-link {
+    background: url(sidebar-promo-divider-light.jpg) no-repeat 0 0 #ededed;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfdfdf;
+    color: #999;
+  }
+  .sidebar-title {
+    color: #999;
+    text-shadow: 0 1px 1px #fff;
+  }
+}

@@ -1,0 +1,200 @@
+.headline-asset-item-tile {
+  background-color: #0050a1;
+}
+
+.headline-asset-item-news-tile {
+  background-color: #009bff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.front-headlines-header {
+  background: #f2f2f2;
+  border-bottom: 1px solid #e1e1e1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 50px;
+  position: relative;
+  padding: 10px 20px 9px;
+}
+
+.headlines-header-title {
+  color: #666;
+  float: left;
+  font-family: 'Futura Today Bold',arial,sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 6px 5px 0 0;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.headlines-header-time {
+  color: #999;
+  float: left;
+  font-size: 11px;
+  margin: 10px 0 0;
+}
+
+.headline-toggler {
+  font-size: 13px;
+  float: right;
+}
+
+.front-headline-toggler {
+  right: 0;
+  margin: 0;
+  &.ui-button-toggle {
+    background: #17a2ff;
+  }
+}
+
+.headline-toggler > {
+  .ui-button-toggle-item:before {
+    background: url(img/ui-sprite.png) 0 0 no-repeat;
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+  }
+  .headline-toggler-listview:before {
+    background-position: -902px -24px;
+    height: 12px;
+    width: 16px;
+  }
+  .headline-toggler-gridview {
+    &:before {
+      background-position: -883px -24px;
+      height: 12px;
+      width: 14px;
+    }
+    &.active:before {
+      background-position: -883px -4px;
+    }
+  }
+}
+
+.headline-asset-item {
+  background: url(img/headlines-shadow.png) 0 -1px no-repeat;
+  color: #fff;
+  float: left;
+  height: 243px;
+  margin: 8px 0 7px 14px;
+  position: relative;
+  width: 220px;
+}
+
+.headline-page {
+  max-height: 5000px;
+  overflow: hidden;
+  -moz-transition: max-height .3s ease-in;
+  -ms-transition: max-height .3s ease-in;
+  -o-transition: max-height .3s ease-in;
+  -webkit-transition: max-height .3s ease-in;
+  transition: max-height .3s ease-in;
+}
+
+.headline-asset-item > .parent-label {
+  left: 10px;
+  top: 10px;
+}
+
+.headline-asset-item-tile {
+  height: 220px;
+  left: 10px;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  width: 200px;
+}
+
+.headline-asset-item:hover .headline-asset-item-front {
+  opacity: 1;
+  z-index: 0;
+  .title {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.headline-asset-item-back {
+  opacity: 0;
+}
+
+.headline-asset-item:hover .headline-asset-item-back {
+  z-index: 1;
+  opacity: 1;
+}
+
+.headline-asset-item-back, .headline-asset-item:hover .headline-asset-item-front .title {
+  -moz-transition: opacity .2s ease-in-out;
+  -ms-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.headline-asset-item-front {
+  z-index: 1;
+}
+
+.headline-asset-item-front-title {
+  display: table;
+  font-weight: 700;
+  margin: 0;
+  position: absolute;
+  -moz-font-feature-settings: "liga=1,dlig=1,kern=1,opbd=1,titl=1";
+  -webkit-font-feature-settings: "liga","dlig","kern","opbd","titl";
+  font-feature-settings: "liga","dlig","kern","opbd","titl";
+}
+
+.headline-asset-item-front > .image {
+  background: transparent url(img/pixel-black-70percent.png) repeat top left;
+  border-top: 1px solid #000;
+  bottom: 0;
+  font-size: 13px;
+  height: 39px;
+  left: 0;
+  line-height: 14px;
+  padding: 8px 10px 10px;
+  width: 180px;
+}
+
+.headline-asset-item {
+  color: #fff;
+  .headline-grid-load-story {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+.headline-asset-item-back-text, .headline-asset-item-back-listview-text {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  line-height: 16px;
+  margin: 20px 20px 0;
+}
+
+.headline-asset-item-back-title {
+  font-size: 14px;
+  font-weight: 700;
+  left: 18px;
+  margin: 30px 20px 0;
+  top: 40px;
+  width: 165px;
+}
+
+.headlines-show-more {
+  clear: both;
+  margin: 5px auto 20px;
+  text-align: center;
+}
+
+.headline-asset-item-back-listview-text {
+  display: none;
+}

@@ -1,0 +1,42 @@
+.most-popular-sidebar-headline {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.most-popular-sidebar-large-thumbnail {
+  float: left;
+  width: 100%;
+  height: 111px;
+  margin-bottom: 15px;
+  position: relative;
+  > .clst-large-image {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+    width: 198px;
+    height: 111px;
+  }
+}
+
+.most-popular-sidebar {
+  background: none repeat scroll 0 0 #333;
+}
+
+@media only screen and (min-width: 1250px) {
+  .most-popular-sidebar-headline {
+    font-size: 14px;
+  }
+  .most-popular-sidebar-large-thumbnail {
+    width: 100%;
+    height: 168px;
+    > .clst-large-image {
+      width: 299px;
+      height: 168px;
+    }
+  }
+}
+
+.most-popular-sidebar-item {
+  list-style: none;
+  position: relative;
+}
