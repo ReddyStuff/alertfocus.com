@@ -73,7 +73,7 @@
 }
 
 .site-header-inner-wrap {
-  background: #141414;
+  @include gradient-vertical($startColor: rgba(69,72,77,1), $endColor: rgba(68,68,68,1));
   min-width: 980px;
   width: 100%;
   z-index: 9000;
@@ -88,6 +88,10 @@
   line-height: 40px;
   margin: -1px -1px 0 0;
   text-align: center;
+}
+
+.site-nav-logo-span {
+  line-height: 44px;
 }
 
 .site-nav-news-link {
@@ -183,6 +187,9 @@ li:nth-child(6):hover {
 .site-nav-icon-link {
   height: 40px;
   transition: background-color .15s;
+  &:hover {
+    background: #333;
+  }
 }
 
 .site-nav-first-secondary-link {
