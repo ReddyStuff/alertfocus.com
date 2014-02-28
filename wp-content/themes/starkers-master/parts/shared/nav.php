@@ -1,3 +1,27 @@
+<?php
+    $args = array(
+        'show_option_all'    => '',
+        'orderby'            => 'name',
+        'order'              => 'ASC',
+        'style'              => 'none',
+        'show_count'         => 0,
+        'hide_empty'         => 1,
+        'use_desc_for_title' => 0,
+        'child_of'           => 2,
+        'exclude'            => '',
+        'exclude_tree'       => '',
+        'include'            => '',
+        'hierarchical'       => 1,
+        'title_li'           => '',
+        'show_option_none'   => '',
+        'number'             => null,
+        'echo'               => 0,
+        'depth'              => 0,
+        'taxonomy'           => 'category',
+    );
+    $categories = get_categories( $args );
+?>
+
 <div class="site-header-inner-wrap site-header-inner-wrap-fixed">
     <nav class="site-nav">
         <ul class="site-nav-list">
@@ -6,46 +30,21 @@
                     <span class="site-nav-span site-nav-text-span site-nav-first-primary-span site-nav-logo-span">example.com</span>
                 </a>
             </li>
-            <li class="site-nav-item">
-                <a class="site-nav-link site-nav-news-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span site-nav-first-primary-span">ADD</span>
-                </a>
-            </li>
-            <li class="site-nav-item">
-                <a class="site-nav-link site-nav-sports-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span">Autism</span>
-                </a>
-            </li>
-            <li class="site-nav-item">
-                <a class="site-nav-link site-nav-life-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span">Addiction</span>
-                </a>
-            </li>
-            <li class="site-nav-item">
-                <a class="site-nav-link site-nav-money-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span">Sleep</span>
-                </a>
-            </li>
-            <li class="site-nav-item">
-                <a class="site-nav-link site-nav-tech-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span">Stress</span>
-                </a>
-            </li>
-            <li class="site-nav-item">
-                <a class="site-nav-link site-nav-news-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span site-nav-first-primary-span">Eating</span>
-                </a>
-            </li>
-            <li class="site-nav-item">
-                <a class="site-nav-link site-nav-sports-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span">Criminal Violence</span>
-                </a>
-            </li>
-            <li class="site-nav-item" id="">
-                <a class="site-nav-link site-nav-life-link site-nav-text-link" href="#">
-                    <span class="site-nav-span site-nav-text-span">Migraines</span>
-                </a>
-            </li>
+
+            <?php foreach($categories as $cat) {
+                echo '
+                <li class="site-nav-item site-nav-logo-item" style="width: auto;">
+                    <a class="site-nav-link site-nav-logo-link"
+                        href="' . get_category_link($cat->term_id) . '"
+                        class="cat-' . $cat->slug . '"
+                        title="View all posts in '. esc_attr($cat->name) . '">
+                            <span class="site-nav-span site-nav-text-span site-nav-first-primary-span site-nav-logo-span">'
+                                . $cat->cat_name .
+                            '</span>
+                    </a>
+                </li>';
+            } ?>
+
             <li class="site-nav-item site-nav-item-theme-usatoday site-nav-secondary-item site-nav-end-item site-nav-first-secondary-item site-nav-icon-item site-nav-search-item site-nav-module site-nav-search-module">
                 <a class=" site-nav-link site-nav-link-theme-usatoday site-nav-end-link site-nav-first-secondary-link site-nav-icon-link site-nav-search-link" href="#">
                     <span class="site-nav-span site-nav-span-theme-usatoday site-nav-end-span site-nav-first-secondary-span site-nav-icon-span site-nav-search-span">Search</span>
@@ -54,7 +53,3 @@
         </ul>
     </nav>
 </div>
-
-
-
-
