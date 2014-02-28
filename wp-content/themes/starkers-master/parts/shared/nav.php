@@ -34,10 +34,9 @@
             <?php foreach($categories as $cat) {
                 echo '
                 <li class="site-nav-item site-nav-logo-item" style="width: auto;">
-                    <a class="site-nav-link site-nav-logo-link"
+                    <a class="site-nav-link site-nav-logo-link cat-' . $cat->slug . '"
                         href="' . get_category_link($cat->term_id) . '"
-                        class="cat-' . $cat->slug . '"
-                        title="View all posts in '. esc_attr($cat->name) . '">
+                        title="'. esc_attr($cat->name) . '">
                             <span class="site-nav-span site-nav-text-span site-nav-first-primary-span site-nav-logo-span">'
                                 . $cat->cat_name .
                             '</span>
