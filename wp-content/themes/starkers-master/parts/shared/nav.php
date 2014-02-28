@@ -1,24 +1,14 @@
 <?php
     // codex.wordpress.org/Template_Tags/wp_list_categories
     $args = array(
-        'show_option_all'    => '',
-        'orderby'            => 'name',
-        'order'              => 'ASC',
-        'style'              => 'none',
-        'show_count'         => 0,
-        'hide_empty'         => 1,
-        'use_desc_for_title' => 0,
-        'child_of'           => 2,
-        'exclude'            => '',
-        'exclude_tree'       => '',
-        'include'            => '',
-        'hierarchical'       => 1,
-        'title_li'           => '',
-        'show_option_none'   => '',
-        'number'             => null,
-        'echo'               => 0,
-        'depth'              => 0,
-        'taxonomy'           => 'category',
+        'hide_empty'         => 1,  // Yes, hide empty categories
+        'use_desc_for_title' => 0,  // No, we'll write custom titles
+        'child_of'           => 2,  // Show only certain children categories
+        'hierarchical'       => 0,  // Don't display sub-categories
+        'title_li'           => '', // Remove outer list element
+        'show_option_none'   => '', // If there are no categories, leave space empty
+        'number'             => '', // How many categories are shown
+        'echo'               => 0,  // Keep results as variable
     );
     $categories = get_categories( $args );
 ?>
