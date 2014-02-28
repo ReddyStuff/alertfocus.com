@@ -1,4 +1,5 @@
 <?php
+    // codex.wordpress.org/Template_Tags/wp_list_categories
     $args = array(
         'show_option_all'    => '',
         'orderby'            => 'name',
