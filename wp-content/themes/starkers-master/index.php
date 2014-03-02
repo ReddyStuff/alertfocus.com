@@ -15,10 +15,9 @@
 ?>
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<?php if ( have_posts() ): ?>
-<?php while ( have_posts() ) : the_post(); ?>
+<?php include ('parts/shared/nav.php'); ?>
 
-    <?php include ('parts/shared/nav.php'); ?>
+<?php if ( have_posts() ): ?>
 
     <article class="cards" id="cards" style="top:50px;">
         <div class="card-container">
@@ -50,7 +49,7 @@
                                 <div class="front-headlines-header">
                                     <h5 class="headlines-header-title">Articles</h5>
 
-                                    <p class="headlines-header-time">Updated 9:20 a.m. EST</p>
+                                    <p class="headlines-header-time">Updated <?php site_last_updated('') ?></p>
 
                                     <ul class="ui-button-toggle ui-light headline-toggler front-headline-toggler "><li class="ui-button-toggle-item ui-btn grid-big headline-toggler-gridview active">Grid</li><li class="ui-button-toggle-item ui-btn list-big headline-toggler-listview ">List</li></ul>
                                 </div>
@@ -83,10 +82,9 @@
             </div>
         </div>
     </article>
-<?php endwhile; ?>
 
 <?php else: ?>
-<h2>No posts to display</h2>
+<h2>Houston, we have a problem.</h2>
 <?php endif; ?>
 
 <?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

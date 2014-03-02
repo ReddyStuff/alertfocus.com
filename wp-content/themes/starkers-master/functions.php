@@ -95,3 +95,22 @@
 			</article>
 		<?php endif;
 	}
+
+
+    /* ========================================================================================================================
+
+    Site Last Updated - This will check the modified_date of all published posts and give you the most recent date.
+
+    ======================================================================================================================== */
+    function site_last_updated() {
+        $recent = new WP_Query("showposts=1&orderby=modified&post_status=publish");
+        if ( $recent->have_posts() ) {
+            while ( $recent->have_posts() ) {
+                $recent->the_post();
+                $last_update = get_the_modified_date('Y-m-d g:i A T');
+            }
+            echo $last_update;
+        }
+        else
+            echo '';
+    }

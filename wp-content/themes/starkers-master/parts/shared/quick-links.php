@@ -1,15 +1,36 @@
+<?php
+// codex.wordpress.org/Template_Tags/wp_list_categories
+$argsQuickLinks = array(
+    'hide_empty'         => 0,  // No, show all
+    'use_desc_for_title' => 0,  // No, we'll write custom titles
+    'child_of'           => '',  // No, show all
+    'hierarchical'       => 0,  // Don't display sub-categories
+    'exclude'            => '1', // Exclude the Uncategorized category
+    'title_li'           => '', // Remove outer list element
+    'show_option_none'   => '', // If there are no categories, leave space empty
+    'number'             => '', // How many categories are shown
+    'echo'               => 0,  // Keep results as variable
+);
+
+// TODO: limit "quick links" to only the special ones like About, Evidence, Wrap Around, etc., i.e. change 'exclude' to 'include'
+$quickLinks = get_categories( $argsQuickLinks );
+?>
+
 <section class="quicklinks-module card-suspender" id="module-position-3">
     <p class="slst-header">Quick Links</p>
 
     <ul class="quick-links-list">
-        <li class="quick-links-item">
-            <a class="clst-link" href="#">Link 001</a>
-        </li>
-        <li class="quick-links-item">
-            <a class="clst-link" href="#">Link 002</a>
-        </li>
-        <li class="quick-links-item">
-            <a class="clst-link" href="#">Link 003</a>
-        </li>
+
+         <?php foreach($quickLinks as $cat) {
+            echo '
+            <li class="quick-links-item">
+                <a class="clst-link"
+                    href="' . get_category_link($cat->term_id) . '"
+                    title="'. esc_attr($cat->name) . '">'
+                        . $cat->cat_name .
+                '</a>
+            </li>';
+         } ?>
+
     </ul>
 </section>
