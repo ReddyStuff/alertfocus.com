@@ -29,6 +29,10 @@
             </ul>
         </div>
     </div>
+
+    <div class="media">
+        <img src="" alt="" width="420" height="420">
+    </div>
 </div>
 
 <?php endforeach; wp_reset_postdata() ;?>

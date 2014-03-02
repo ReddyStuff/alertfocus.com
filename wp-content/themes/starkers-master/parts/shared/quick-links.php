@@ -3,16 +3,12 @@
 $argsQuickLinks = array(
     'hide_empty'         => 0,  // No, show all
     'use_desc_for_title' => 0,  // No, we'll write custom titles
-    'child_of'           => '',  // No, show all
     'hierarchical'       => 0,  // Don't display sub-categories
-    'exclude'            => '1', // Exclude the Uncategorized category
+    'include'            => '17,18,19,20', // Only include Wrap-Around, Evidence, Links and About categories
     'title_li'           => '', // Remove outer list element
-    'show_option_none'   => '', // If there are no categories, leave space empty
-    'number'             => '', // How many categories are shown
     'echo'               => 0,  // Keep results as variable
 );
 
-// TODO: limit "quick links" to only the special ones like About, Evidence, Wrap Around, etc., i.e. change 'exclude' to 'include'
 $quickLinks = get_categories( $argsQuickLinks );
 ?>
 

@@ -107,10 +107,43 @@
         if ( $recent->have_posts() ) {
             while ( $recent->have_posts() ) {
                 $recent->the_post();
-                $last_update = get_the_modified_date('Y-m-d g:i A T');
+                $last_update = get_the_modified_date('Y-m-d');
             }
             echo $last_update;
         }
         else
             echo '';
     }
+
+
+    /* ========================================================================================================================
+
+    Popular Posts - This will track and display popular posts by views.
+
+    ======================================================================================================================== */
+    // Detect post view count and store it as a custom field for each post
+    function af_set_post_views($postID) {
+        $count_key = 'af_post_views_count';
+        $count = get_post_meta($postID, $count_key, true);
+        if($count==''){
+            $count = 0;
+            delete_post_meta($postID, $count_key);
+            add_post_meta($postID, $count_key, '0');
+        }else{
+            $count++;
+            update_post_meta($postID, $count_key, $count);
+        }
+    }
+    // Remove pre-fetching to keep counts accurate
+    remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+    // Add tracker to header
+    function af_track_post_views ($post_id) {
+        if ( !is_single() ) return;
+        if ( empty ( $post_id) ) {
+            global $post;
+            $post_id = $post->ID;
+        }
+        af_set_post_views($post_id);
+    }
+    add_action( 'wp_head', 'af_track_post_views');
