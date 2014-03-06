@@ -1,157 +1,45 @@
 <div class="headline-page active">
-    <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class=" parent-label news">Thing 1</span><a class="anchor headline-grid-load-story" href="#"></a>
 
-        <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
-            <div class="image-wrap">
-                <img alt="" class="headline-grid-image" height="220" src="" width="200">
-            </div>
+    <?php
+        $argsRecent = array(
+            'numberposts' => 6,
+            'order' => 'DESC',
+            'orderby' => 'date',
+        );
 
-            <h3 class="title image headline-asset-item-front-title">
-                <span class="content-info-icon-text">Lorem ipsum dolor</span>
-            </h3>
-        </div>
+        $recentPosts = get_posts( $argsRecent );
 
-        <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
-            <h3 class="title headline-asset-item-back-title">Lorem ipsum dolor</h3>
+        foreach ( $recentPosts as $post) : setup_postdata($post);
 
-            <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
-
-            <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">
-                Francis greeted Benedict, who
-                sat in the front row of St.
-                Peter's Basilica with the
-                cardinals.</p>
-        </div>
-    </div>
+        $category = get_the_category();
+    ?>
 
     <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class=" parent-label experience">Thing 2</span><a class="anchor headline-grid-load-story" href="#"></a>
+        <span class="parent-label news cat-<?php echo $category[0]->slug; ?>">
+            <?php echo $category[0]->cat_name; ?>
+        </span>
+        <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">
 
-        <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
-            <div class="image-wrap">
-                <img alt="" class="headline-grid-image" height="220" src="" width="200">
+            <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
+                <div class="image-wrap">
+                    <img alt="" class="headline-grid-image" height="220" src="" width="200">
+                </div>
+
+                <h3 class="title image headline-asset-item-front-title">
+                    <span class="content-info-icon-text"><?php the_title(); ?></span>
+                </h3>
             </div>
 
-            <h3 class="title image headline-asset-item-front-title">
-                <span class="content-info-icon-text">Lorem ipsum dolor</span>
-            </h3>
-        </div>
+            <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
+                <h3 class="title headline-asset-item-back-title"><?php the_title(); ?></h3>
 
-        <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
-            <h3 class="title headline-asset-item-back-title">Lorem ipsum dolor</h3>
+                <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peters Basilica with the cardinals."></p>
 
-            <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
-
-            <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">
-                Francis greeted Benedict, who
-                sat in the front row of St.
-                Peter's Basilica with the
-                cardinals.</p>
-        </div>
-    </div>
-
-    <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class=" parent-label sports">Thing 3</span><a class="anchor headline-grid-load-story" href="#"></a>
-
-        <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
-            <div class="image-wrap">
-                <img alt="" class="headline-grid-image" height="220" src="" width="200">
+                <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peters Basilica with the cardinals."><?php the_excerpt(); ?></p>
             </div>
 
-            <h3 class="title image headline-asset-item-front-title">
-                <span class="content-info-icon-text">Lorem ipsum dolor</span>
-            </h3>
-        </div>
-
-        <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
-            <h3 class="title headline-asset-item-back-title">Lorem ipsum dolor</h3>
-
-            <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
-
-            <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">
-                Francis greeted Benedict, who
-                sat in the front row of St.
-                Peter's Basilica with the
-                cardinals.</p>
-        </div>
+        </a>
     </div>
+    <?php endforeach; wp_reset_postdata() ;?>
 
-    <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class=" parent-label money">Thing 4</span><a class="anchor headline-grid-load-story" href="#"></a>
-
-        <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
-            <div class="image-wrap">
-                <img alt="" class="headline-grid-image" height="220" src="" width="200">
-            </div>
-
-            <h3 class="title image headline-asset-item-front-title">
-                <span class="content-info-icon-text">Lorem ipsum dolor</span>
-            </h3>
-        </div>
-
-        <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
-            <h3 class="title headline-asset-item-back-title">Lorem ipsum dolor</h3>
-
-            <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
-
-            <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">
-                Francis greeted Benedict, who
-                sat in the front row of St.
-                Peter's Basilica with the
-                cardinals.</p>
-        </div>
-    </div>
-
-    <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class=" parent-label news">Thing 5</span><a class="anchor headline-grid-load-story" href="#"></a>
-
-        <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
-            <div class="image-wrap">
-                <img alt="" class="headline-grid-image" height="220" src="" width="200">
-            </div>
-
-            <h3 class="title image headline-asset-item-front-title">
-                <span class="content-info-icon-text">Lorem ipsum dolor</span>
-            </h3>
-        </div>
-
-        <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
-            <h3 class="title headline-asset-item-back-title">Lorem ipsum dolor</h3>
-
-            <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
-
-            <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">
-                Francis greeted Benedict, who
-                sat in the front row of St.
-                Peter's Basilica with the
-                cardinals.</p>
-        </div>
-    </div>
-
-    <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class=" parent-label tech">Thing 6</span><a class="anchor headline-grid-load-story" href="#"></a>
-
-        <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
-            <div class="image-wrap">
-                <img alt="" class="headline-grid-image" height="220" src="" width="200">
-            </div>
-
-            <h3 class="title image headline-asset-item-front-title">
-                <span class="content-info-icon-text">Lorem ipsum dolor</span>
-            </h3>
-        </div>
-
-        <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
-            <h3 class="title headline-asset-item-back-title">Lorem ipsum dolor</h3>
-
-            <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
-
-            <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peter's Basilica with the cardinals.">
-                Francis greeted Benedict, who
-                sat in the front row of St.
-                Peter's Basilica with the
-                cardinals.</p>
-        </div>
-    </div>
 </div>
