@@ -3,8 +3,8 @@
     <?php
         $argsRecent = array(
             'numberposts' => 6,
-            'order' => 'DESC',
-            'orderby' => 'date',
+            // 'order' => 'DESC',
+            'orderby' => 'rand',
         );
 
         $recentPosts = get_posts( $argsRecent );
@@ -22,7 +22,14 @@
 
             <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
                 <div class="image-wrap">
-                    <img alt="" class="headline-grid-image" height="220" src="" width="200">
+                    <?php
+                    if( has_post_thumbnail() ) { ?>
+                        <div class="entry-thumbnail">
+                            <?php the_post_thumbnail();?>
+                        </div>
+                    <?php } else { ?>
+                        <img class="post-thumb" src="http://lorempixel.com/200/220" alt=""/>
+                    <?php } ?>
                 </div>
 
                 <h3 class="title image headline-asset-item-front-title">

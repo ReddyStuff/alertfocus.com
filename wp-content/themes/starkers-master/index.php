@@ -51,7 +51,7 @@
 
                                     <p class="headlines-header-time">Updated <?php site_last_updated('') ?></p>
 
-                                    <ul class="ui-button-toggle ui-light headline-toggler front-headline-toggler "><li class="ui-button-toggle-item ui-btn grid-big headline-toggler-gridview active">Grid</li><li class="ui-button-toggle-item ui-btn list-big headline-toggler-listview ">List</li></ul>
+<!--                                    <ul class="ui-button-toggle ui-light headline-toggler front-headline-toggler "><li class="ui-button-toggle-item ui-btn grid-big headline-toggler-gridview active">Grid</li><li class="ui-button-toggle-item ui-btn list-big headline-toggler-listview ">List</li></ul>-->
                                 </div>
 
                                 <div class="headline-collection clearfix">

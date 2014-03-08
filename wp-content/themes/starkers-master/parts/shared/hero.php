@@ -31,7 +31,14 @@
     </div>
 
     <div class="media">
-        <img src="" alt="" width="420" height="420">
+        <?php
+        if( has_post_thumbnail() ) { ?>
+            <div class="entry-thumbnail">
+                <?php the_post_thumbnail();?>
+            </div>
+        <?php } else { ?>
+            <img class="post-thumb" src="http://lorempixel.com/420/420" alt=""/>
+        <?php } ?>
     </div>
 </div>
 
