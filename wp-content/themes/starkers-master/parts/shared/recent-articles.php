@@ -3,15 +3,13 @@
     <?php
         $argsRecent = array(
             'numberposts' => 6,
-            // 'order' => 'DESC',
             'orderby' => 'rand',
         );
 
         $recentPosts = get_posts( $argsRecent );
 
         foreach ( $recentPosts as $post) : setup_postdata($post);
-
-        $category = get_the_category();
+            $category = get_the_category();
     ?>
 
     <div class="headline headline-asset-item headline-asset-item-card hasimage">
@@ -40,9 +38,9 @@
             <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
                 <h3 class="title headline-asset-item-back-title"><?php the_title(); ?></h3>
 
-                <p class="headline-asset-item-back-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peters Basilica with the cardinals."></p>
-
-                <p class="headline-asset-item-back-listview-text" data-fulltext="Francis greeted Benedict, who sat in the front row of St. Peters Basilica with the cardinals."><?php the_excerpt(); ?></p>
+                <p class="headline-asset-item-back-text">
+                    <?php echo get_the_excerpt(); ?>
+                </p>
             </div>
 
         </a>
