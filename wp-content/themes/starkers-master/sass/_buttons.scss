@@ -1,63 +1,96 @@
-a.button-add-content {
-  background: transparent url(img/button-add-content-back.png) repeat-x top left;
-  color: #666;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-  padding: 11px 10px;
-  position: relative;
-  outline: 0;
-  &:before {
-    background: transparent url(img/button-add-content-caps.png) no-repeat top left;
-    content: url(img/button-add-content-icon-default.png);
-    height: 34px;
-    left: -34px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 34px;
-  }
-  &:after {
-    background: transparent url(img/button-add-content-caps.png) no-repeat top right;
-    content: '';
-    height: 34px;
-    position: absolute;
-    right: -16px;
-    top: 0;
-    width: 16px;
-  }
-  &:hover:after {
-    background-position: center right;
-  }
-  &:active {
-    background-position: bottom left;
-    color: #0af;
+a {
+  &.button-add-content {
+    background: transparent url(img/button-add-content-back.png) repeat-x top left;
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    padding: 11px 10px;
+    position: relative;
+    outline: 0;
     &:before {
-      background-position: bottom left;
-      color: #0af;
-    }
-  }
-  &:hover:before {
-    content: url(img/button-add-content-icon-hover.png);
-  }
-  &:active {
-    &:before {
-      content: url(img/button-add-content-icon-open.png);
-    }
-    &:hover:before {
-      content: url(img/button-add-content-icon-open-hover.png);
+      background: transparent url(img/button-add-content-caps.png) no-repeat top left;
+      content: url(img/button-add-content-icon-default.png);
+      height: 34px;
+      left: -34px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 34px;
     }
     &:after {
-      background-position: bottom right;
+      background: transparent url(img/button-add-content-caps.png) no-repeat top right;
+      content: '';
+      height: 34px;
+      position: absolute;
+      right: -16px;
+      top: 0;
+      width: 16px;
     }
-  }
-  &:hover {
-    background-position: center left;
-    color: #0af;
-    &:before {
+    &:hover:after {
+      background-position: center right;
+    }
+    &:active {
+      background-position: bottom left;
+      color: #0af;
+      &:before {
+        background-position: bottom left;
+        color: #0af;
+      }
+    }
+    &:hover:before {
+      content: url(img/button-add-content-icon-hover.png);
+    }
+    &:active {
+      &:before {
+        content: url(img/button-add-content-icon-open.png);
+      }
+      &:hover:before {
+        content: url(img/button-add-content-icon-open-hover.png);
+      }
+      &:after {
+        background-position: bottom right;
+      }
+    }
+    &:hover {
       background-position: center left;
       color: #0af;
+      &:before {
+        background-position: center left;
+        color: #0af;
+      }
+    }
+  }
+  &.button {
+    display: inline-block;
+    position: relative;
+    min-width: 54px;
+    margin-right: 16px;
+    padding: 0 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    color: $color-grey-dark;
+    font-size: 11px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    outline: 0;
+    text-align: center;
+    white-space: nowrap;
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      @include box-shadow(0px 2px 1px rgba(0, 0, 0, 0.1));
+    }
+    &:active {
+      position: relative;
+      top: 1px;
+      left: 1px;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      @include box-shadow(0px 1px 1px rgba(0, 0, 0, 0.4));
     }
   }
 }

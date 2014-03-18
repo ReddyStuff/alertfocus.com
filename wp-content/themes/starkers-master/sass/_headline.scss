@@ -86,16 +86,6 @@
   width: 220px;
 }
 
-.headline-page {
-  max-height: 5000px;
-  overflow: hidden;
-  -moz-transition: max-height .3s ease-in;
-  -ms-transition: max-height .3s ease-in;
-  -o-transition: max-height .3s ease-in;
-  -webkit-transition: max-height .3s ease-in;
-  transition: max-height .3s ease-in;
-}
-
 .headline-asset-item > .parent-label {
   left: 10px;
   top: 10px;

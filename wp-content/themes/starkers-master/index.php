@@ -59,7 +59,7 @@
                                 </div>
 
                                 <div class="headlines-show-more">
-                                    <a class="button-add-content" data-default="Show More News" data-loading="Loading More News" data-next="" href="#">Show More News</a>
+                                    <h3 class="pagination"><a class="button" href="archive" title="">View All Articles</a></h3>
                                 </div>
                             </section>
                         </div>

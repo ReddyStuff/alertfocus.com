@@ -18,7 +18,7 @@
         <ul class="site-nav-list">
             <li class="site-nav-item" style="width: auto;">
                 <a class="site-nav-link site-nav-logo-link" href="/">
-                    <span class="site-nav-span site-nav-text-span site-nav-first-primary-span">example.com</span>
+                    <span class="site-nav-span site-nav-text-span site-nav-first-primary-span">alertfocus.com</span>
                 </a>
             </li>
 
