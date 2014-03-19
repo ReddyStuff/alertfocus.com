@@ -97,50 +97,6 @@
   }
 }
 
-.open-sidebar {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  padding-left: 32px;
-  right: -13px;
-  top: -14px;
-  width: 82px;
-  > .icon {
-    background: transparent url(modules/live-feed/sprite.png) 0 -96px no-repeat;
-    height: 11px;
-    position: absolute;
-    width: 12px;
-    top: 9px;
-    left: 15px;
-  }
-}
-
-.close-sidebar {
-  background: transparent url(modules/live-feed/sprite.png) 0 -48px no-repeat;
-  padding: 0;
-  left: -12px;
-  top: -14px;
-  width: 44px;
-}
-
-.partner-sidebar-ad {
-  overflow: visible;
-  padding: 20px;
-}
-
-.sidebar-ad-iframe {
-  display: block;
-}
-
-.close-sidebar > .icon {
-  background: transparent url(modules/live-feed/sprite.png) -60px -146px no-repeat;
-  height: 21px;
-  position: absolute;
-  width: 20px;
-  top: 6px;
-  left: 11px;
-}
-
 .sidebar-button.hide {
   display: none;
   &:visited {
@@ -242,32 +198,4 @@
 
 .sidebar-static-title {
   color: #fff;
-}
-
-a.sidebar-promo-link {
-  background: url(sidebar-promo-divider.jpg) no-repeat 0 0 #101010;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 11px 13px 11px 17px;
-  font-size: 11px;
-  text-transform: uppercase;
-  font-weight: 700;
-  &:hover {
-    color: #c8c8c8;
-  }
-}
-
-.sidebar.light {
-  a.sidebar-promo-link {
-    background: url(sidebar-promo-divider-light.jpg) no-repeat 0 0 #ededed;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #dfdfdf;
-    color: #999;
-  }
-  .sidebar-title {
-    color: #999;
-    text-shadow: 0 1px 1px #fff;
-  }
 }
