@@ -16,18 +16,18 @@ footer {
 }
 
 .site-footer-link {
-  color: #666;
+  color: $color-grey-medium;
   text-decoration: none;
   @include transition(top .15s);
 
   &:hover {
-    color: #666;
+    color: $color-grey-medium;
     text-decoration: underline;
   }
 }
 
 .site-footer-link-text {
-  color: #666;
+  color: $color-grey-medium;
   font-family: 'Futura Today Bold',arial,sans-serif;
   font-size: 15px;
   font-weight: 400;

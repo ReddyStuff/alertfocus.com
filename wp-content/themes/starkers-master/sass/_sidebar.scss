@@ -1,8 +1,8 @@
 .sidebar {
   bottom: 0;
   background: #262626;
-  border-top: 1px solid #333;
-  border-right: 1px solid #333;
+  border-top: 1px solid $color-grey-dark;
+  border-right: 1px solid $color-grey-dark;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%!important;
@@ -57,7 +57,7 @@
   width: 100%;
   height: 13px;
   overflow: hidden;
-  color: #999;
+  color: $color-grey-light;
   font-family: 'Futura Today Bold',Arial,sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -128,7 +128,7 @@
 }
 
 .partner-sidebar-ad {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid $color-grey-dark;
 }
 
 .sidebar.light {
@@ -142,7 +142,7 @@
     height: 100%!important;
   }
   .sidebar-title {
-    color: #999;
+    color: $color-grey-light;
     text-shadow: 0 1px 1px #fff;
   }
   .sider-bar-loading {

@@ -175,7 +175,7 @@
 
 .hero-list-item {
   border-bottom: 1px solid #e6e6e6;
-  color: #666;
+  color: $color-grey-medium;
   display: block;
   float: left;
   font-size: 11px;
@@ -188,7 +188,7 @@
 }
 
 a.hero-list-anchor {
-  color: #333;
+  color: $color-grey-dark;
   display: inline-block;
   float: left;
   font-size: 12px;
@@ -201,7 +201,7 @@ a.hero-list-anchor {
 }
 
 .hero-head {
-  color: #999;
+  color: $color-grey-light;
   font-family: 'Futura Today Bold',arial,sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -244,7 +244,7 @@ a.hero-list-anchor {
     background-color: #ffc000;
   }
   &.opinion {
-    background-color: #666;
+    background-color: $color-grey-medium;
   }
 }
 

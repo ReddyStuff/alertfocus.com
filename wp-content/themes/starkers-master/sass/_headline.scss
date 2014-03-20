@@ -19,7 +19,7 @@
 }
 
 .headlines-header-title {
-  color: #666;
+  color: $color-grey-medium;
   float: left;
   font-family: 'Futura Today Bold',arial,sans-serif;
   font-size: 15px;
@@ -30,7 +30,7 @@
 }
 
 .headlines-header-time {
-  color: #999;
+  color: $color-grey-light;
   float: left;
   font-size: 11px;
   margin: 10px 0 0;

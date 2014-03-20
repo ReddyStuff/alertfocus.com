@@ -34,7 +34,7 @@
   float: left;
   transition: background-color .15s;
   &:hover {
-    background: #333;
+    background: $color-grey-dark;
   }
 }
 
@@ -180,7 +180,7 @@ ul.site-nav-list {
   height: 40px;
   transition: background-color .15s;
   &:hover {
-    background: #333;
+    background: $color-grey-dark;
   }
 }
 
