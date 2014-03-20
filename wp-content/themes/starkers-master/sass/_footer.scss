@@ -1,4 +1,38 @@
+footer {
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .site-footer-links-container {
-  width: 652px;
-  margin: 80px auto 40px;
+  width: 88%;
+  margin: 80px auto 60px;
+}
+
+.site-footer-link-container {
+  display: inline-block;
+  width: 24%;
+  text-align:center;
+}
+
+.site-footer-link {
+  color: #666;
+  text-decoration: none;
+  @include transition(top .15s);
+
+  &:hover {
+    color: #666;
+    text-decoration: underline;
+  }
+}
+
+.site-footer-link-text {
+  color: #666;
+  font-family: 'Futura Today Bold',arial,sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 6px 5px 0 0;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
 }
