@@ -165,22 +165,11 @@
 }
 
 .sidebar-title-wrapper {
-  background-color: #222;
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #242424;
-  min-height: 14px;
   padding: 11px 0;
   position: relative;
   width: 100%;
 }
 
-.sidebar.light {
-  .sidebar-static-title-wrapper, .sidebar-title-wrapper {
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #dfdfdf;
-    border-top: 0;
-  }
-}
 
 .sidebar-title {
   color: #d2d2d2;
