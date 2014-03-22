@@ -9,7 +9,7 @@
             <ul class="most-popular-sidebar-list most-popular-sidebar-list-home" style="text-align:center;">
                 <li class="most-popular-sidebar-item noimage">
                     <div class="most-popular-sidebar-large-thumbnail">
-                        <img alt="" class="clst-large-image" src="wp-content/themes/starkers-master/img/headshot.png">
+                        <img alt="" class="clst-large-image" src="../wp-content/themes/starkers-master/img/headshot.png">
                     </div>
                     <p class="most-popular-sidebar-headline">
                         Gary Ames

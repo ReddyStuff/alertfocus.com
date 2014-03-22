@@ -11,6 +11,7 @@
   background: white url(img/noise_fff.png) repeat top left;
   position: relative;
   width: 840px;
+  min-height: 100vh;
   z-index: 15;
 }
 
@@ -40,6 +41,10 @@
   float: right;
   width: 720px;
   position: relative;
+
+  &.single {
+    border-bottom: none;
+  }
 }
 
 .card-suspender {
