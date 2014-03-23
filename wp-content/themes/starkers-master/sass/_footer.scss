@@ -37,8 +37,6 @@ footer {
   text-align: center;
 }
 
-
-
 .site-footer-container {
   clear: left;
 }
@@ -48,7 +46,7 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 20px 0 14px;
-  background: transparent url(http://www.gannett-cdn.com/static/usat-web-static-17.6.0/images/patterns/paper-noise-bar.png) repeat top left;
+  background: transparent url(img/paper-noise-bar.png) repeat top left;
   color: #999;
 }
 
@@ -58,7 +56,7 @@ footer {
   top: 0;
   left: 0;
   height: 6px;
-  background-image: url(http://www.gannett-cdn.com/static/usat-web-static-17.6.0/images/components/sponsored-story-top-border.png);
+  background-image: url(img/top-border.png);
   background-position: top left;
 }
 
