@@ -40,9 +40,12 @@
                                     <div class="headline-collection clearfix">
 
                                         <div style="padding: 20px;">
-                                            <img alt="" class="clst-large-image" src="http://lorempixel.com/200/220" style="width:200px;height:220px;float:left;margin:0 20px 10px 0;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08);">
+                                            <img alt="" class="clst-large-image" src="http://lorempixel.com/200/220" style="width:150px;height:150px;float:left;margin:0 20px 10px 0;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08);">
 
                                             <div class="clearfix">
+
+                                                <div style="float:right;width:275px;height:500px">Related Articles</div>
+
                                                 <?php the_content(); ?>
                                             </div>
                                         </div>
