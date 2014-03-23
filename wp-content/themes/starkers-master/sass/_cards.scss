@@ -32,8 +32,6 @@
 }
 
 .card-primary {
-  //border-bottom: 1px solid #e1e1e1;
-  //border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   border-right: 1px solid #e1e1e1;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
   -moz-box-sizing: border-box;
@@ -259,6 +257,6 @@
   text-transform: uppercase;
 }
 
-.card-suspender-color.news {
-  background-color: #1877b6;
+.card-suspender-color.alert {
+  background-color: #ffc000;
 }

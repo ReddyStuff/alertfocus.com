@@ -13,7 +13,7 @@
     ?>
 
     <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class="parent-label news cat-<?php echo $category[0]->slug; ?>">
+        <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
             <?php echo $category[0]->cat_name; ?>
         </span>
         <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">

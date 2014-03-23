@@ -12,7 +12,7 @@
 ?>
 
 <div class="hero-left-pane hero-asset-open news">
-    <span class="parent-label news cat-<?php echo $category[0]->slug; ?>">
+    <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
         <?php echo $category[0]->cat_name; ?>
     </span>
 

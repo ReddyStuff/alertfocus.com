@@ -84,69 +84,82 @@
   line-height: 44px;
 }
 
-.site-nav-news-link {
+span.parent-label {
+  &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap-around {
+    background-color: #009bff;
+  }
+
+  &.cat-academic, &.cat-evidence, &.cat-relieve {
+    background: #b81800;
+  }
+
+  &.cat-add, &.cat-executive, &.cat-sales-training {
+    background: #9600b4;
+  }
+
+  &.cat-addictions, &.cat-links, &.cat-sleep {
+    background: #00a53c;
+  }
+
+  &.cat-autism, &.cat-migraine, &.cat-sports {
+    background: #fa5f00;
+  }
+
+  &.cat-criminal-violence, &.cat-military, &.cat-stress {
+    background: #ffc000;
+  }
+
+  &.cat-uncategorized {
+    background: $color-grey-medium;
+  }
+}
+
+ul.site-nav-list li a {
+  &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap-around {
     border-top-color: #009bff;
-}
 
-.site-nav-sports-link {
-  border-top-color: #b81800;
-}
-
-.site-nav-life-link {
-  border-top-color: #9600b4;
-}
-
-.site-nav-money-link {
-  border-top-color: #00a53c;
-}
-
-.site-nav-tech-link {
-  border-top-color: #fa5f00;
-}
-
-ul.site-nav-list {
-  li:nth-child(2), li:nth-child(7) {
     &:hover {
       background: #009bff;
     }
-    & a {
-      border-top-color: #009bff;
-    }
   }
 
-  li:nth-child(3), li:nth-child(8) {
+  &.cat-academic, &.cat-evidence, &.cat-relieve {
+    border-top-color: #b81800;
+
     &:hover {
       background: #b81800;
     }
-    & a {
-      border-top-color: #b81800;
-    }
   }
 
-  li:nth-child(4), li:nth-child(9) {
+  &.cat-add, &.cat-executive, &.cat-sales-training {
+    border-top-color: #9600b4;
+
     &:hover {
       background: #9600b4;
     }
-    & a {
-      border-top-color: #9600b4;
-    }
   }
 
-  li:nth-child(5) {
+  &.cat-addictions, &.cat-links, &.cat-sleep {
+    border-top-color: #00a53c;
+
     &:hover {
       background: #00a53c;
     }
-    & a {
-      border-top-color: #00a53c;
-    }
   }
 
-  li:nth-child(6) {
+  &.cat-autism, &.cat-migraine, &.cat-sports {
+    border-top-color: #fa5f00;
+
     &:hover {
       background: #fa5f00;
     }
-    & a {
-      border-top-color: #fa5f00;
+  }
+
+  &.cat-criminal-violence, &.cat-military, &.cat-stress {
+    border-top-color: #ffc000;
+
+    &:hover {
+      background: #ffc000;
     }
   }
 }

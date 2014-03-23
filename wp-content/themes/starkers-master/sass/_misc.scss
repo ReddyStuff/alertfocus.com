@@ -1,5 +1,4 @@
 .parent-label {
-  background-color: #009bff;
   color: #fff;
   font-family: 'Futura Today Bold',arial,sans-serif;
   font-size: 10px;
@@ -221,34 +220,6 @@ a.hero-list-anchor {
 @media only screen and (max-width: 1149px) {
   a.hero-list-anchor {
     padding: 11px 0 10px;
-  }
-}
-
-.parent-label {
-  background-color: #0050a1;
-  &.news {
-    background-color: #009bff;
-  }
-  &.sports {
-    background-color: #eb1e00;
-  }
-  &.life {
-    background-color: #9600b4;
-  }
-  &.money {
-    background-color: #00a53c;
-  }
-  &.tech {
-    background-color: #fa5f00;
-  }
-  &.travel, &.experience {
-    background-color: #00c3c3;
-  }
-  &.weather {
-    background-color: #ffc000;
-  }
-  &.opinion {
-    background-color: $color-grey-medium;
   }
 }
 

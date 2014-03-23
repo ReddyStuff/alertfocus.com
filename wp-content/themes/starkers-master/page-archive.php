@@ -16,7 +16,7 @@
                 <section class="home card card-bumped" data-section-id="home" data-subsection-id="" id="section_home">
                     <div class="card-full-width" id="card_full_width_main">
                         <div class="card-primary-wrapper clearfix">
-                            <div class="card-suspender-color news"></div>
+                            <div class="card-suspender-color alert"></div>
 
                             <?php include ('parts/shared/quick-links.php'); ?>
 
