@@ -4,18 +4,18 @@ footer {
   text-transform: uppercase;
 }
 
-.site-footer-links-container {
+.page-footer-links-container {
   width: 88%;
   margin: 80px auto 60px;
 }
 
-.site-footer-link-container {
+.page-footer-link-container {
   display: inline-block;
   width: 24%;
   text-align:center;
 }
 
-.site-footer-link {
+.page-footer-link {
   color: $color-grey-medium;
   text-decoration: none;
   @include transition(top .15s);
@@ -26,7 +26,7 @@ footer {
   }
 }
 
-.site-footer-link-text {
+.page-footer-link-text {
   color: $color-grey-medium;
   font-family: 'Futura Today Bold',arial,sans-serif;
   font-size: 15px;
@@ -35,4 +35,34 @@ footer {
   text-transform: uppercase;
   text-shadow: 0 1px 0 #fff;
   text-align: center;
+}
+
+
+
+.site-footer-container {
+  clear: left;
+}
+
+.site-footer-bar {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0 14px;
+  background: transparent url(http://www.gannett-cdn.com/static/usat-web-static-17.6.0/images/patterns/paper-noise-bar.png) repeat top left;
+  color: #999;
+}
+
+.site-footer-bar-border {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background-image: url(http://www.gannett-cdn.com/static/usat-web-static-17.6.0/images/components/sponsored-story-top-border.png);
+  background-position: top left;
+}
+
+.site-footer-text {
+  margin: 0 auto;
+  color: #999;
 }
