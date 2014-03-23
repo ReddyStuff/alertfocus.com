@@ -17,7 +17,11 @@ $quickLinks = get_categories( $argsQuickLinks );
 
     <ul class="quick-links-list">
 
-         <?php foreach($quickLinks as $cat) {
+        <li class="quick-links-item">
+            <a class="clst-link" href="/" title="Home">Home</a>
+        </li>
+
+        <?php foreach($quickLinks as $cat) {
             echo '
             <li class="quick-links-item">
                 <a class="clst-link"
@@ -26,7 +30,7 @@ $quickLinks = get_categories( $argsQuickLinks );
                         . $cat->cat_name .
                 '</a>
             </li>';
-         } ?>
+        } ?>
 
     </ul>
 </section>

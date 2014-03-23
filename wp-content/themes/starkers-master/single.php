@@ -29,17 +29,18 @@
                                 <div class="front-bump-shadow"></div>
 
                                 <section class="card-primary headline-grid-module single">
-                                    <div class="front-headlines-header">
-                                        <h5 class="headlines-header-title"><?php the_title(); ?></h5>
+                                    <div class="front-headlines-header" style="height: auto;overflow: auto;">
+                                        <h5 style="width:82%;float: left;" class="headlines-header-title"><?php the_title(); ?></h5>
+                                        <time style="width:15%; float: right;margin: 6px 5px 0 0;font-size: 10px;text-align:right" datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_time( 'Y-m-d' ); ?></time>
                                     </div>
                                     <div>
-                                        <time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_time( 'Y-m-d' ); ?></time>
+
                                     </div>
 
-                                    <div class="headline-collection most-popular-sidebar-large-thumbnail clearfix">
+                                    <div class="headline-collection clearfix">
 
                                         <div style="padding: 20px;">
-                                            <img alt="" class="clst-large-image" src="http://lorempixel.com/200/220" style="width:200px;height:220px;float:left;margin:0 20px 10px 0;">
+                                            <img alt="" class="clst-large-image" src="http://lorempixel.com/200/220" style="width:200px;height:220px;float:left;margin:0 20px 10px 0;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08);">
 
                                             <div class="clearfix">
                                                 <?php the_content(); ?>

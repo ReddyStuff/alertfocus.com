@@ -86,43 +86,68 @@
 
 .site-nav-news-link {
     border-top-color: #009bff;
-  }
+}
+
+.site-nav-sports-link {
+  border-top-color: #b81800;
+}
+
+.site-nav-life-link {
+  border-top-color: #9600b4;
+}
+
+.site-nav-money-link {
+  border-top-color: #00a53c;
+}
+
+.site-nav-tech-link {
+  border-top-color: #fa5f00;
+}
 
 ul.site-nav-list {
-  li:nth-child(2):hover, li:nth-child(7):hover {
-    background: #009bff;
+  li:nth-child(2), li:nth-child(7) {
+    &:hover {
+      background: #009bff;
+    }
+    & a {
+      border-top-color: #009bff;
+    }
   }
 
-  .site-nav-sports-link {
-    border-top-color: #b81800;
+  li:nth-child(3), li:nth-child(8) {
+    &:hover {
+      background: #b81800;
+    }
+    & a {
+      border-top-color: #b81800;
+    }
   }
 
-  li:nth-child(3):hover, li:nth-child(8):hover {
-    background: #b81800;
+  li:nth-child(4), li:nth-child(9) {
+    &:hover {
+      background: #9600b4;
+    }
+    & a {
+      border-top-color: #9600b4;
+    }
   }
 
-  .site-nav-life-link {
-    border-top-color: #9600b4;
+  li:nth-child(5) {
+    &:hover {
+      background: #00a53c;
+    }
+    & a {
+      border-top-color: #00a53c;
+    }
   }
 
-  li:nth-child(4):hover, li:nth-child(9):hover {
-    background: #9600b4;
-  }
-
-  .site-nav-money-link {
-    border-top-color: #00a53c;
-  }
-
-  li:nth-child(5):hover {
-    background: #00a53c;
-  }
-
-  .site-nav-tech-link {
-    border-top-color: #fa5f00;
-  }
-
-  li:nth-child(6):hover {
-    background: #fa5f00;
+  li:nth-child(6) {
+    &:hover {
+      background: #fa5f00;
+    }
+    & a {
+      border-top-color: #fa5f00;
+    }
   }
 }
 
@@ -130,7 +155,7 @@ ul.site-nav-list {
   border-style: solid;
   border-width: 2px 1px 0 0;
   height: 38px;
-  margin: 0 0 0 -1px;
+  margin: 0;
 }
 
 .site-nav-span {

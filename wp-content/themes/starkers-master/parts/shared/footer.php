@@ -6,13 +6,13 @@
             </a>
         </div>
         <div class="site-footer-link-container">
-            <a class="site-footer-link" href="#" title="">
+            <a class="site-footer-link" href="<?php bloginfo('rss_url'); ?>" title="RSS Feed">
                 <span class="icon-rss"></span>
                 <div class="site-footer-link-text">RSS</div>
             </a>
         </div>
         <div class="site-footer-link-container">
-            <a class="site-footer-link" href="#" title="">
+            <a class="site-footer-link" href="mailto:gary@garyames.net" title="Contact Gary Ames">
                 <span class="icon-contact"></span>
                 <div class="site-footer-link-text">Contact</div>
             </a>

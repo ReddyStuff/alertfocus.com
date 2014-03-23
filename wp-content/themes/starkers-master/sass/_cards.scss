@@ -32,8 +32,8 @@
 }
 
 .card-primary {
-  border-bottom: 1px solid #e1e1e1;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  //border-bottom: 1px solid #e1e1e1;
+  //border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   border-right: 1px solid #e1e1e1;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
   -moz-box-sizing: border-box;
@@ -237,8 +237,12 @@
 
 .clst-link {
   color: inherit;
-  &:visited, &:active, &:hover {
+  &:visited, &:active {
     color: inherit;
+  }
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
   }
 }
 

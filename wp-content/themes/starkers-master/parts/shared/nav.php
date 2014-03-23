@@ -25,7 +25,7 @@
             <?php foreach($categories as $cat) {
                 echo '
                 <li class="site-nav-item" style="width: auto;">
-                    <a class="site-nav-link cat-' . $cat->slug . '"
+                    <a class="site-nav-link site-nav-text-link cat-' . $cat->slug . '"
                         href="' . get_category_link($cat->term_id) . '"
                         title="'. esc_attr($cat->name) . '">
                             <span class="site-nav-span site-nav-text-span">'

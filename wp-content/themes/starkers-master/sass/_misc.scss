@@ -198,6 +198,10 @@ a.hero-list-anchor {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 280px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .hero-head {
