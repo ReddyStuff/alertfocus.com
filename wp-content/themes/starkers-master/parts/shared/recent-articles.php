@@ -39,7 +39,7 @@
                 <h3 class="title headline-asset-item-back-title"><?php the_title(); ?></h3>
 
                 <p class="headline-asset-item-back-text">
-                    <?php echo get_the_excerpt(); ?>
+                    <?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,10); ?>
                 </p>
             </div>
 

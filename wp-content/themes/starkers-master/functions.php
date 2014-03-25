@@ -147,3 +147,22 @@
         af_set_post_views($post_id);
     }
     add_action( 'wp_head', 'af_track_post_views');
+
+
+    /* ========================================================================================================================
+
+    Excerpt Limiter - This will limit the number of words in the excerpt
+
+    ======================================================================================================================== */
+
+    function string_limit_words($string, $word_limit)
+    {
+        $words = explode(' ', $string, ($word_limit + 1));
+        if(count($words) > $word_limit) {
+            array_pop($words);
+            //add ellipsis when more than limit word count
+            echo implode(' ', $words)." ...";
+        } else {
+            echo implode(' ', $words);
+        }
+    }
