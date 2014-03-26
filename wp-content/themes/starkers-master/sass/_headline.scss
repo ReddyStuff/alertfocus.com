@@ -1,5 +1,10 @@
 .headline-asset-item-tile {
   background-color: #0050a1;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .headline-asset-item-news-tile {
@@ -84,11 +89,11 @@
   margin: 8px 0 7px 14px;
   position: relative;
   width: 220px;
-}
 
-.headline-asset-item > .parent-label {
-  left: 10px;
-  top: 10px;
+  > .parent-label {
+    left: 10px;
+    top: 10px;
+  }
 }
 
 .headline-asset-item-tile {
@@ -120,10 +125,7 @@
 }
 
 .headline-asset-item-back, .headline-asset-item:hover .headline-asset-item-front .title {
-  -moz-transition: opacity .2s ease-in-out;
-  -ms-transition: opacity .2s ease-in-out;
-  -o-transition: opacity .2s ease-in-out;
-  transition: opacity .2s ease-in-out;
+  @include transition(opacity .2s ease-in-out);
 }
 
 .headline-asset-item-front {
