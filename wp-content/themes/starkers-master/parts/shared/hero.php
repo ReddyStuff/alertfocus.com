@@ -31,14 +31,7 @@
     </div>
 
     <div class="media">
-        <?php
-        if( has_post_thumbnail() ) { ?>
-            <div class="entry-thumbnail">
-                <?php the_post_thumbnail();?>
-            </div>
-        <?php } else { ?>
-            <img class="post-thumb" src="http://lorempixel.com/420/420" alt=""/>
-        <?php } ?>
+        <?php include ('post-thumbnail.php'); ?>
     </div>
 </div>
 

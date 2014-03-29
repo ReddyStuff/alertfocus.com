@@ -28,14 +28,7 @@
 
                 <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
                     <div class="image-wrap">
-                        <?php
-                        if( has_post_thumbnail() ) { ?>
-                            <div class="entry-thumbnail">
-                                <?php the_post_thumbnail();?>
-                            </div>
-                        <?php } else { ?>
-                            <img class="post-thumb" src="http://lorempixel.com/200/220" alt=""/>
-                        <?php } ?>
+                        <?php include ('post-thumbnail.php'); ?>
                     </div>
 
                     <h3 class="title image headline-asset-item-front-title">
