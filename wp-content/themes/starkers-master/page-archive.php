@@ -24,7 +24,7 @@
                                 <div class="front-bump-shadow"></div>
 
                                 <section class="card-primary headline-grid-module" id="module-position-10">
-                                    <div class="front-headlines-header">
+                                    <div class="headlines-header">
                                         <h5 class="headlines-header-title">Archive</h5>
                                     </div>
 

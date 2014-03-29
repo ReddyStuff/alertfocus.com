@@ -8,15 +8,16 @@
   }
 }
 
-.front-headlines-header {
+.headlines-header {
   background: #f2f2f2;
   border-bottom: 1px solid #e1e1e1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 50px;
   position: relative;
   padding: 10px 20px 9px;
+  height: auto;
+  overflow: auto;
 }
 
 .headlines-header-title {

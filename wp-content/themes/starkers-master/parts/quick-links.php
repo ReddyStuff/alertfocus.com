@@ -12,7 +12,7 @@ $argsQuickLinks = array(
 $quickLinks = get_categories( $argsQuickLinks );
 ?>
 
-<section class="quicklinks-module card-suspender" id="module-position-3">
+<section class="card-suspender">
     <p class="slst-header">Quick Links</p>
 
     <ul class="quick-links-list">

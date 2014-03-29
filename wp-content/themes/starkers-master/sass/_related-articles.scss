@@ -1,0 +1,27 @@
+.related-articles-container {
+  border: 1px solid #e6e6e6;
+  margin: 0 0 20px 10px;
+  position: relative;
+  float: right;
+}
+
+.related-articles {
+  position: relative;
+  text-align: center;
+  width: 200px;
+  z-index: 0;
+}
+
+.related-article-list {
+  @extend .hero-list;
+
+  & li:last-child {
+    border-bottom: none;
+  }
+}
+
+.no-related-articles {
+  margin-top: 1.5em;
+  text-align: left;
+  font-size: 12px;
+}

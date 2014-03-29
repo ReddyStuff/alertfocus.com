@@ -1,15 +1,16 @@
 <div>
-    <section class="card-sidebar most-popular-module most-popular-sidebar" id="module-position-20">
+    <section>
         <div class="sidebar-title-wrapper">
-            <h6 class="sidebar-title most-popular-sidebar-title home">
-                Contact Information</h6>
+            <h6 class="sidebar-title">
+                Contact Information
+            </h6>
         </div>
 
-        <div class="sidebar-content most-popular-sidebar-content home">
-            <ul class="most-popular-sidebar-list most-popular-sidebar-list-home" style="text-align:center;">
-                <li class="most-popular-sidebar-item noimage">
+        <div>
+            <ul style="text-align:center;">
+                <li class="most-popular-sidebar-item">
                     <div class="most-popular-sidebar-large-thumbnail">
-                        <img alt="" class="image-large-thumbnail" src="/wp-content/themes/starkers-master/img/headshot.png">
+                        <img alt="Gary Ames headshot" class="image-large-thumbnail" src="/wp-content/themes/starkers-master/img/headshot.png">
                     </div>
                     <p class="most-popular-sidebar-headline">
                         Gary Ames

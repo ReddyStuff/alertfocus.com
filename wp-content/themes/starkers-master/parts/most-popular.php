@@ -1,5 +1,7 @@
 <div class="hero-headline-list-pane">
-    <h5 class="hero-head">Most Popular</h5>
+    <div class="headlines-header">
+        <h5 class="headlines-header-title">Most Popular</h5>
+    </div>
 
     <ul class="hero-list">
 

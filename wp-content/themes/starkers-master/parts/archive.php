@@ -13,18 +13,18 @@
         $category = get_the_category();
         ?>
 
-        <div class="headline headline-asset-item headline-asset-item-card hasimage">
+        <div class="headline headline-asset-item headline-asset-item-card">
         <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
             <?php echo $category[0]->cat_name; ?>
         </span>
             <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">
 
-                <div class="headline-asset-item-front tile headline-asset-item-tile">
+                <div class="headline-asset-item-front headline-asset-item-tile">
                     <div class="image-wrap">
                         <?php include('post-thumbnail.php'); ?>
                     </div>
 
-                    <h3 class="title image headline-asset-item-front-title">
+                    <h3 class="image headline-asset-item-front-title">
                         <span class="content-info-icon-text"><?php the_title(); ?></span>
                     </h3>
                 </div>

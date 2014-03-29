@@ -12,7 +12,7 @@
             $category = get_the_category();
     ?>
 
-    <div class="headline headline-asset-item headline-asset-item-card hasimage">
+    <div class="headline headline-asset-item headline-asset-item-card">
         <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
             <?php echo $category[0]->cat_name; ?>
         </span>
