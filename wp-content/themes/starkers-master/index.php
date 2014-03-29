@@ -32,9 +32,9 @@
                             <section class="card-primary hero-module" id="module-position-4">
                                 <div class="front-bump-shadow"></div>
 
-                                <div class="hero-headline-pack hero hero-page-turn">
-                                    <div class="hero-page-front ui-page-turn active">
-                                        <div class="ui-placer">
+                                <div class="hero-headline-pack hero">
+                                    <div class="hero-page-front">
+                                        <div>
 
                                             <?php include ('parts/shared/hero.php'); ?>
 
@@ -49,16 +49,16 @@
                                 <div class="front-headlines-header">
                                     <h5 class="headlines-header-title">Articles</h5>
 
-                                    <p class="headlines-header-time">Updated <?php site_last_updated('') ?></p>
+                                    <p class="last-updated">Updated <?php site_last_updated('') ?></p>
                                 </div>
 
-                                <div class="headline-collection clearfix">
+                                <div class="clearfix">
 
                                     <?php include ('parts/shared/recent-articles.php'); ?>
 
                                 </div>
 
-                                <div class="headlines-show-more">
+                                <div class="show-more">
                                     <h3 class="pagination"><a class="button" href="archive" title="">View All Articles</a></h3>
                                 </div>
                             </section>

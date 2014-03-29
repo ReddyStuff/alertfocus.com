@@ -13,7 +13,7 @@
     $categories = get_categories( $args );
 ?>
 
-<div class="site-header-inner-wrap site-header-inner-wrap-fixed">
+<div class="site-header-inner-wrap">
     <nav class="site-nav">
         <ul class="site-nav-list">
             <li class="site-nav-item" style="width: auto;">

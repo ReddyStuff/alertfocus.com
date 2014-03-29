@@ -26,7 +26,7 @@
                                                     </span>
             <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">
 
-                <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
+                <div class="headline-asset-item-front tile headline-asset-item-tile">
                     <div class="image-wrap">
                         <?php include ('post-thumbnail.php'); ?>
                     </div>
@@ -36,7 +36,7 @@
                     </h3>
                 </div>
 
-                <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
+                <div class="headline-asset-item-back tile headline-asset-item-tile">
                     <h3 class="title headline-asset-item-back-title"><?php the_title(); ?></h3>
 
                     <p class="headline-asset-item-back-text">

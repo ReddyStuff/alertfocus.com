@@ -103,15 +103,6 @@
       &:hover {
         color: #0af;
       }
-      &.spike {
-        background: transparent url(img/sprite-hero.png) no-repeat top left;
-        height: 17px;
-        min-width: 86px;
-        padding: 1px 0 3px 22px;
-        &:hover {
-          background-position: 0 -17px;
-        }
-      }
     }
   }
 }
@@ -158,10 +149,6 @@
   position: absolute;
   top: 0;
   width: 320px;
-}
-
-.hero-page-turn {
-  z-index: 98;
 }
 
 .hero-list {
@@ -254,4 +241,9 @@ a.hero-list-anchor {
 
 .content-info-icon-text {
   line-height: 18px;
+}
+
+.image-wrap {
+  width: 200px;
+  height: 220px;
 }

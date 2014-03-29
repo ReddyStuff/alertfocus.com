@@ -1,15 +1,11 @@
 .headline-asset-item-tile {
-  background-color: #0050a1;
+  background-color: #009bff;
+  background-color: rgba(0, 0, 0, 0.8);
 
   & img {
     width: 100%;
     height: 100%;
   }
-}
-
-.headline-asset-item-news-tile {
-  background-color: #009bff;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .front-headlines-header {
@@ -34,51 +30,11 @@
   text-shadow: 0 1px 0 #fff;
 }
 
-.headlines-header-time {
+.last-updated {
   color: $color-grey-light;
   float: left;
   font-size: 11px;
   margin: 10px 0 0;
-}
-
-.headline-toggler {
-  font-size: 13px;
-  float: right;
-}
-
-.front-headline-toggler {
-  right: 0;
-  margin: 0;
-  &.ui-button-toggle {
-    background: #17a2ff;
-  }
-}
-
-.headline-toggler > {
-  .ui-button-toggle-item:before {
-    background: url(img/ui-sprite.png) 0 0 no-repeat;
-    content: '';
-    display: inline-block;
-    margin-right: 5px;
-    overflow: hidden;
-    position: relative;
-    top: 2px;
-  }
-  .headline-toggler-listview:before {
-    background-position: -902px -24px;
-    height: 12px;
-    width: 16px;
-  }
-  .headline-toggler-gridview {
-    &:before {
-      background-position: -883px -24px;
-      height: 12px;
-      width: 14px;
-    }
-    &.active:before {
-      background-position: -883px -4px;
-    }
-  }
 }
 
 .headline-asset-item {
@@ -164,7 +120,7 @@
   }
 }
 
-.headline-asset-item-back-text, .headline-asset-item-back-listview-text {
+.headline-asset-item-back-text {
   color: #fff;
   color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
@@ -181,12 +137,8 @@
   width: 165px;
 }
 
-.headlines-show-more {
+.show-more {
   clear: both;
   margin: 5px auto 20px;
   text-align: center;
-}
-
-.headline-asset-item-back-listview-text {
-  display: none;
 }

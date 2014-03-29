@@ -33,7 +33,7 @@
                                         <h5 class="headlines-header-title"><?php echo single_cat_title( '', false ); ?></h5>
                                     </div>
 
-                                    <div class="headline-collection clearfix">
+                                    <div class="clearfix">
 
                                         <?php include ('parts/shared/category.php'); ?>
 

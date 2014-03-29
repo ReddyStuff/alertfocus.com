@@ -28,7 +28,7 @@
                                         <h5 class="headlines-header-title">Archive</h5>
                                     </div>
 
-                                    <div class="headline-collection clearfix">
+                                    <div class="clearfix">
 
                                         <?php include ('parts/shared/archive.php'); ?>
 

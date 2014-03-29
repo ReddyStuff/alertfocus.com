@@ -37,7 +37,7 @@
 
                                     </div>
 
-                                    <div class="headline-collection clearfix">
+                                    <div class="clearfix">
 
                                         <div style="padding: 20px;">
                                             <div class="image-wrap">

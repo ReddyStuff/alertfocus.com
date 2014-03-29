@@ -19,7 +19,7 @@
         </span>
             <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">
 
-                <div class="headline-asset-item-front tile headline-asset-item-news-tile headline-asset-item-tile">
+                <div class="headline-asset-item-front tile headline-asset-item-tile">
                     <div class="image-wrap">
                         <?php include ('post-thumbnail.php'); ?>
                     </div>
