@@ -31,7 +31,7 @@
     </div>
 
     <div class="media">
-        <?php include ('post-thumbnail.php'); ?>
+        <?php include('post-thumbnail.php'); ?>
     </div>
 </div>
 

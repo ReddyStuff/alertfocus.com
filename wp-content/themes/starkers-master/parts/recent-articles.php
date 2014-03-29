@@ -20,7 +20,7 @@
 
             <div class="headline-asset-item-front tile headline-asset-item-tile">
                 <div class="image-wrap">
-                    <?php include ('post-thumbnail.php'); ?>
+                    <?php include('post-thumbnail.php'); ?>
                 </div>
 
                 <h3 class="title image headline-asset-item-front-title">

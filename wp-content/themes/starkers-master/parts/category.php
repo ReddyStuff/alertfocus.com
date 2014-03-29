@@ -1,27 +1,34 @@
 <div class="headline-page active">
 
     <?php
-    $argsArchive = array (
-        'numberposts' => '-1',
+    $current_cat = intval( get_query_var('cat') );
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $argsCategory=array(
+        'category__and' => array($current_cat),
+        'paged' => $paged,
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'caller_get_posts'=> 1,
         'orderby' => 'date',
         'order' => 'DESC'
     );
 
-    $archivePosts = get_posts( $argsArchive );
+    $categoryPosts = get_posts( $argsCategory );
 
-    foreach ( $archivePosts as $post) : setup_postdata($post);
+    foreach ( $categoryPosts as $post) : setup_postdata($post);
         $category = get_the_category();
         ?>
 
         <div class="headline headline-asset-item headline-asset-item-card hasimage">
-        <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
-            <?php echo $category[0]->cat_name; ?>
-        </span>
+                                                    <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
+                                                        <?php echo $category[0]->cat_name; ?>
+                                                    </span>
             <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">
 
                 <div class="headline-asset-item-front tile headline-asset-item-tile">
                     <div class="image-wrap">
-                        <?php include ('post-thumbnail.php'); ?>
+                        <?php include('post-thumbnail.php'); ?>
                     </div>
 
                     <h3 class="title image headline-asset-item-front-title">
@@ -29,7 +36,7 @@
                     </h3>
                 </div>
 
-                <div class="headline-asset-item-back tile headline-asset-item-tile headline-asset-item-news-tile">
+                <div class="headline-asset-item-back tile headline-asset-item-tile">
                     <h3 class="title headline-asset-item-back-title"><?php the_title(); ?></h3>
 
                     <p class="headline-asset-item-back-text">

@@ -15,7 +15,7 @@
 ?>
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<?php include ('parts/shared/nav.php'); ?>
+<?php include('parts/shared/nav.php'); ?>
 
 <?php if ( have_posts() ): ?>
 
@@ -27,7 +27,7 @@
                         <div class="card-primary-wrapper clearfix">
                             <div class="card-suspender-color alert"></div>
 
-                            <?php include ('parts/shared/quick-links.php'); ?>
+                            <?php include('parts/shared/quick-links.php'); ?>
 
                             <section class="card-primary hero-module" id="module-position-4">
                                 <div class="front-bump-shadow"></div>
@@ -36,9 +36,9 @@
                                     <div class="hero-page-front">
                                         <div>
 
-                                            <?php include ('parts/shared/hero.php'); ?>
+                                            <?php include('parts/shared/hero.php'); ?>
 
-                                            <?php include ('parts/shared/most-popular.php'); ?>
+                                            <?php include('parts/shared/most-popular.php'); ?>
 
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@
 
                                 <div class="clearfix">
 
-                                    <?php include ('parts/shared/recent-articles.php'); ?>
+                                    <?php include('parts/shared/recent-articles.php'); ?>
 
                                 </div>
 
@@ -68,7 +68,7 @@
                             <div class="sidebar-wrapper">
                                 <div class="sidebar-scrollable-window">
 
-                                    <?php include ('parts/shared/contact-sidebar.php'); ?>
+                                    <?php include('parts/shared/contact-sidebar.php'); ?>
 
                                 </div>
                             </div>
