@@ -9,8 +9,8 @@
  * @since 		Starkers 4.0
  */
 ?>
-<?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+<?php get_template_parts( array( 'parts/html-header', 'parts/header' ) ); ?>
 
 <h2>Page not found</h2>
 
-<?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
+<?php get_template_parts( array( 'parts/footer','parts/html-footer' ) ); ?>

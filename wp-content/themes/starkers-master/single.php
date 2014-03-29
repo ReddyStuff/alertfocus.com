@@ -9,9 +9,9 @@
  * @since 		Starkers 4.0
  */
 ?>
-<?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+<?php get_template_parts( array( 'parts/html-header', 'parts/header' ) ); ?>
 
-<?php include('parts/shared/nav.php'); ?>
+<?php include('parts/nav.php'); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -23,7 +23,7 @@
                         <div class="card-primary-wrapper clearfix">
                             <div class="card-suspender-color alert"></div>
 
-                            <?php include('parts/shared/quick-links.php'); ?>
+                            <?php include('parts/quick-links.php'); ?>
 
                             <section class="card-primary hero-module single">
                                 <div class="front-bump-shadow"></div>
@@ -65,7 +65,7 @@
                             <div class="sidebar-wrapper">
                                 <div class="sidebar-scrollable-window">
 
-                                    <?php include('parts/shared/contact-sidebar.php'); ?>
+                                    <?php include('parts/contact-sidebar.php'); ?>
 
                                 </div>
                             </div>
@@ -79,4 +79,4 @@
     </article>
 <?php endwhile; ?>
 
-<?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
+<?php get_template_parts( array( 'parts/footer','parts/html-footer') ); ?>

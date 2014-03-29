@@ -4,9 +4,9 @@
  * This displays all posts in the main page frame
  */
 ?>
-<?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+<?php get_template_parts( array( 'parts/html-header', 'parts/header' ) ); ?>
 
-<?php include('parts/shared/nav.php'); ?>
+<?php include('parts/nav.php'); ?>
 
 <?php if ( have_posts() ): ?>
 
@@ -18,7 +18,7 @@
                         <div class="card-primary-wrapper clearfix">
                             <div class="card-suspender-color alert"></div>
 
-                            <?php include('parts/shared/quick-links.php'); ?>
+                            <?php include('parts/quick-links.php'); ?>
 
                             <section class="card-primary hero-module" id="module-position-4">
                                 <div class="front-bump-shadow"></div>
@@ -30,7 +30,7 @@
 
                                     <div class="clearfix">
 
-                                        <?php include('parts/shared/archive.php'); ?>
+                                        <?php include('parts/archive.php'); ?>
 
                                     </div>
                                 </section>
@@ -41,7 +41,7 @@
                             <div class="sidebar-wrapper">
                                 <div class="sidebar-scrollable-window">
 
-                                    <?php include('parts/shared/contact-sidebar.php'); ?>
+                                    <?php include('parts/contact-sidebar.php'); ?>
 
                                 </div>
                             </div>
@@ -58,4 +58,4 @@
     <h2>Houston, we have a problem.</h2>
 <?php endif; ?>
 
-<?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
+<?php get_template_parts( array( 'parts/footer','parts/html-footer') ); ?>
