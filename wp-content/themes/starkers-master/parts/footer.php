@@ -1,10 +1,10 @@
     <section class="page-footer-links-container">
-        <div class="page-footer-link-container">
-            <a class="page-footer-link" href="#" title="">
-                <span class="icon-subscribe"></span>
-                <div class="page-footer-link-text">Subscribe</div>
-            </a>
-        </div>
+<!--        <div class="page-footer-link-container">-->
+<!--            <a class="page-footer-link" href="#" title="">-->
+<!--                <span class="icon-subscribe"></span>-->
+<!--                <div class="page-footer-link-text">Subscribe</div>-->
+<!--            </a>-->
+<!--        </div>-->
         <div class="page-footer-link-container">
             <a class="page-footer-link" href="<?php bloginfo('rss_url'); ?>" title="RSS Feed">
                 <span class="icon-rss"></span>
@@ -12,13 +12,13 @@
             </a>
         </div>
         <div class="page-footer-link-container">
-            <a class="page-footer-link" href="mailto:gary@garyames.net" title="Contact Gary Ames">
+            <a class="page-footer-link" href="mailto:garyames@alertfocus.com" title="Contact Gary Ames">
                 <span class="icon-contact"></span>
                 <div class="page-footer-link-text">Contact</div>
             </a>
         </div>
         <div class="page-footer-link-container">
-            <a class="page-footer-link" href="#" title="">
+            <a class="page-footer-link" href="mailto:admin@alertfocus.com" title="Leave Feedback for Site Admins">
                 <span class="icon-feedback"></span>
                 <div class="page-footer-link-text">Feedback</div>
             </a>

@@ -27,3 +27,51 @@
       url(resources/futura_today_light.svg#FuturaLight) format('svg');
   font-style:light;
 }
+
+%blockquote-bar {
+  font-size: 44px;
+  position: absolute;
+  height:2px;
+  text-align: center;
+  left: 20px;
+  right: 20px;
+  line-height: .5;
+  background-image: -webkit-linear-gradient( 0deg, #e6e6e6 35%, transparent 35%, transparent), -webkit-linear-gradient( 0deg, transparent, transparent 65%, #e6e6e6 65%);
+}
+
+blockquote {
+  float: left;
+  width: 200px;
+  padding: 40px 20px;
+  margin: 0 30px 20px 0;
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  font-weight: bold;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #666;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-color: #666;
+    color: #e6e6e6;
+  }
+  &:before {
+    content: '\201C';
+    @extend %blockquote-bar;
+    top: 20px;
+    &:hover {
+      color: #009bff;
+    }
+  }
+  &:after {
+    content: '\201D';
+    @extend %blockquote-bar;
+    bottom: 20px;
+  }
+
+  & > p {
+    margin-bottom: 0;
+  }
+}
