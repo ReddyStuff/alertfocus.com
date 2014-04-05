@@ -33,6 +33,7 @@
 .site-nav-logo-link {
   float: left;
   transition: background-color .15s;
+  border-top: 2px solid transparent;
   &:hover {
     background: $color-grey-dark;
   }
@@ -166,38 +167,36 @@ ul.site-nav-list li a {
   z-index: 9005;
 }
 
-.site-nav-search-span {
-  width: 19px;
+.search-field {
+  background-color: transparent;
+  background-image: url(img/icon-search.png);
+  background-position: 4px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  margin: 8px 0;
+  padding: 2px 0 0px 34px;
+  position: relative;
+  @include transition(all .2s ease-in-out);
+  width: 0;
 }
 
-.site-nav-icon-span {
-  height: 40px;
-  overflow: hidden;
-  padding: 0 10px;
-  text-indent: -10000em;
-  white-space: nowrap;
-  &:after {
-    background-image: url(img/header-sprite.png);
-    content: '';
-    display: inline-block;
-    height: 20px;
-    left: 50%;
-    opacity: .7;
-    position: absolute;
-    top: 11px;
-    width: 20px;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: rotate(0);
-    transition: opacity .15s;
-  }
+.search-field:focus {
+  background-color: #f2f2f2;
+  color: #666;
+  font-family: 'Futura Today Bold',Helvetica,Arial,sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: text;
+  outline: 0;
+  width: 230px;
+  margin-right: 6px;
 }
 
-.site-nav-search-span:after {
-  background-position: -62px 0;
-  height: 18px;
-  margin-left: -10px;
-  top: 11px;
-  width: 19px;
+input[type="search"] {
+  -webkit-appearance: textfield;
 }
 
 .site-nav-icon-link {
@@ -210,6 +209,7 @@ ul.site-nav-list li a {
 
 .site-nav-first-secondary-link {
   border-left: 1px solid #343434;
+  padding-left: 6px;
 }
 
 .site-nav-secondary-item {

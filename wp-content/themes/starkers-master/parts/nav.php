@@ -35,10 +35,8 @@
                 </li>';
             } ?>
 
-            <li class="site-nav-item site-nav-item-theme-usatoday site-nav-secondary-item site-nav-end-item site-nav-first-secondary-item site-nav-icon-item site-nav-search-item site-nav-module site-nav-search-module">
-                <a class=" site-nav-link site-nav-link-theme-usatoday site-nav-end-link site-nav-first-secondary-link site-nav-icon-link site-nav-search-link" href="#">
-                    <span class="site-nav-span site-nav-span-theme-usatoday site-nav-end-span site-nav-first-secondary-span site-nav-icon-span site-nav-search-span">Search</span>
-                </a>
+            <li class="site-nav-secondary-item">
+                <?php get_search_form(); ?>
             </li>
         </ul>
     </nav>
