@@ -24,7 +24,7 @@
             <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
                 <?php echo $category[0]->cat_name; ?>
             </span>
-            <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">
+            <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>" title="Click to View Article">
 
                 <div class="headline-asset-item-front headline-asset-item-tile">
                     <div class="image-wrap">

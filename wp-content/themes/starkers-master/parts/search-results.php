@@ -1,17 +1,6 @@
 <div class="headline-page active">
 
-    <?php
-    $argsArchive = array (
-        'numberposts' => '-1',
-        'orderby' => 'date',
-        'order' => 'DESC'
-    );
-
-    $archivePosts = get_posts( $argsArchive );
-
-    foreach ( $archivePosts as $post) : setup_postdata($post);
-        $category = get_the_category();
-        ?>
+    <?php while ( have_posts() ) : the_post(); ?>
 
         <div class="headline headline-asset-item headline-asset-item-card">
             <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
@@ -39,6 +28,6 @@
 
             </a>
         </div>
-    <?php endforeach; wp_reset_postdata() ;?>
+    <?php endwhile; ?>
 
 </div>

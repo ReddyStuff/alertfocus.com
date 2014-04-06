@@ -19,12 +19,12 @@
     <div class="hero-text">
         <div class="hero-story">
             <h1>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>" title="Click to View Article"><?php the_title(); ?></a>
             </h1>
 
             <ul class="actions clearfix">
                 <li>
-                    <a href="<?php the_permalink(); ?>">Read More</a>
+                    <a href="<?php the_permalink(); ?>" title="Click to View Article">View Article</a>
                 </li>
             </ul>
         </div>

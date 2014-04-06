@@ -12,8 +12,11 @@
   z-index: 0;
 }
 
-.related-article-list {
-  @extend .hero-list;
+ul.related-article-list {
+  list-style: none;
+  position: relative;
+  padding: 0 20px !important;
+  margin: 0 !important;
 
   & li:last-child {
     border-bottom: none;
