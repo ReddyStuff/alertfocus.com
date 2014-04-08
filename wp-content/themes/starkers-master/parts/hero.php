@@ -7,13 +7,12 @@
     $hero = get_posts( $argsHero );
 
     foreach ( $hero as $post ) : setup_postdata( $post );
-
-    $category = get_the_category();
+    $posttags = get_the_tags();
 ?>
 
 <div class="hero-left-pane hero-asset-open">
-    <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
-        <?php echo $category[0]->cat_name; ?>
+    <span class="parent-label cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
+        <?php foreach($posttags as $tag) {echo $tag->name . ' ';} ?>
     </span>
 
     <div class="hero-text">

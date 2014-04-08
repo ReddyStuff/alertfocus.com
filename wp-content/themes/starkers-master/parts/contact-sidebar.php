@@ -10,7 +10,7 @@
             <ul style="text-align:center;">
                 <li class="most-popular-sidebar-item">
                     <div class="most-popular-sidebar-large-thumbnail">
-                        <img alt="Gary Ames headshot" class="image-large-thumbnail" src="/wp-content/themes/starkers-master/img/headshot.png">
+                        <img alt="Gary Ames" class="image-large-thumbnail" src="/wp-content/themes/starkers-master/img/headshot.png">
                     </div>
                     <p class="most-popular-sidebar-headline">
                         Gary Ames

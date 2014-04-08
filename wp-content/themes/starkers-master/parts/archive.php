@@ -1,21 +1,21 @@
 <div class="headline-page active">
 
     <?php
-    $argsArchive = array (
-        'numberposts' => '-1',
-        'orderby' => 'date',
-        'order' => 'DESC'
-    );
+        $argsArchive = array (
+            'numberposts' => '-1',
+            'orderby' => 'date',
+            'order' => 'DESC'
+        );
 
-    $archivePosts = get_posts( $argsArchive );
+        $archivePosts = get_posts( $argsArchive );
 
-    foreach ( $archivePosts as $post) : setup_postdata($post);
-        $category = get_the_category();
-        ?>
+        foreach ( $archivePosts as $post) : setup_postdata($post);
+        $posttags = get_the_tags();
+    ?>
 
         <div class="headline headline-asset-item headline-asset-item-card">
-            <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
-                <?php echo $category[0]->cat_name; ?>
+            <span class="parent-label cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
+                <?php foreach($posttags as $tag) {echo $tag->name . ' ';} ?>
             </span>
             <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>">
 

@@ -75,7 +75,7 @@
 }
 
 span.parent-label {
-  &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap-around {
+  &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap, &.cat-wrap-around {
     background-color: #009bff;
   }
 
@@ -83,7 +83,7 @@ span.parent-label {
     background: #b81800;
   }
 
-  &.cat-add, &.cat-executive, &.cat-sales-training {
+  &.cat-add, &.cat-executive, &.cat-sales, &.cat-sales-training {
     background: #9600b4;
   }
 
@@ -95,7 +95,7 @@ span.parent-label {
     background: #fa5f00;
   }
 
-  &.cat-criminal-violence, &.cat-military, &.cat-stress {
+  &.cat-criminal, &.cat-criminal-violence, &.cat-military, &.cat-stress {
     background: #ffc000;
   }
 
@@ -105,7 +105,7 @@ span.parent-label {
 }
 
 ul.site-nav-list li a {
-  &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap-around {
+  &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap, &.cat-wrap-around {
     border-top-color: #009bff;
 
     &:hover {
@@ -121,7 +121,7 @@ ul.site-nav-list li a {
     }
   }
 
-  &.cat-add, &.cat-executive, &.cat-sales-training {
+  &.cat-add, &.cat-executive, &.cat-sales, &.cat-sales-training {
     border-top-color: #9600b4;
 
     &:hover {
@@ -145,7 +145,7 @@ ul.site-nav-list li a {
     }
   }
 
-  &.cat-criminal-violence, &.cat-military, &.cat-stress {
+  &.cat-criminal, &.cat-criminal-violence, &.cat-military, &.cat-stress {
     border-top-color: #ffc000;
 
     &:hover {

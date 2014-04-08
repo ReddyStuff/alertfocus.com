@@ -1,28 +1,28 @@
 <div class="headline-page active">
 
     <?php
-    $current_cat = intval( get_query_var('cat') );
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    $argsCategory=array(
-        'category__and' => array($current_cat),
-        'paged' => $paged,
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'posts_per_page' => -1,
-        'caller_get_posts'=> 1,
-        'orderby' => 'date',
-        'order' => 'DESC'
-    );
+        $current_cat = intval( get_query_var('cat') );
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $argsCategory=array(
+            'category__and' => array($current_cat),
+            'paged' => $paged,
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'posts_per_page' => -1,
+            'caller_get_posts'=> 1,
+            'orderby' => 'date',
+            'order' => 'DESC',
+        );
 
-    $categoryPosts = get_posts( $argsCategory );
+        $categoryPosts = get_posts( $argsCategory );
 
-    foreach ( $categoryPosts as $post) : setup_postdata($post);
-        $category = get_the_category();
-        ?>
+        foreach ( $categoryPosts as $post) : setup_postdata($post);
+        $posttags = get_the_tags();
+    ?>
 
         <div class="headline headline-asset-item headline-asset-item-card">
-            <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
-                <?php echo $category[0]->cat_name; ?>
+            <span class="parent-label cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
+                <?php foreach($posttags as $tag) {echo $tag->name . ' ';} ?>
             </span>
             <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>" title="Click to View Article">
 

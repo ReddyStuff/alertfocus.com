@@ -9,12 +9,12 @@
         $recentPosts = get_posts( $argsRecent );
 
         foreach ( $recentPosts as $post) : setup_postdata($post);
-            $category = get_the_category();
+        $posttags = get_the_tags();
     ?>
 
     <div class="headline headline-asset-item headline-asset-item-card">
-        <span class="parent-label cat-<?php echo $category[0]->slug; ?>">
-            <?php echo $category[0]->cat_name; ?>
+        <span class="parent-label cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
+            <?php foreach($posttags as $tag) {echo $tag->name . ' ';} ?>
         </span>
         <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>" title="Click to View Article">
 
