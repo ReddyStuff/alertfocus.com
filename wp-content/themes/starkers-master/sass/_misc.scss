@@ -1,6 +1,6 @@
 .parent-label {
-  color: #fff;
-  font-family: 'Futura Today Bold',arial,sans-serif;
+  color: $color-white;
+  font-family: $font-family;
   font-size: 10px;
   font-weight: 400;
   left: 20px;
@@ -11,25 +11,29 @@
   text-transform: uppercase;
   top: 20px;
   z-index: 40;
+
   &:visited, &:hover {
-    color: #fff;
+    color: $color-white;
   }
 }
 
 .hero {
-  .parent-label {
-    z-index: 54;
-  }
   background: white url(img/noise_fff.png);
   position: relative;
   width: 720px;
   z-index: 5;
+
+  .parent-label {
+    z-index: 54;
+  }
+
   .media {
     position: absolute;
     bottom: 0;
     height: 100%;
     width: 100%;
     z-index: 50;
+
     > img {
       position: absolute;
       bottom: 0;
@@ -60,24 +64,22 @@
 
 .hero-story {
   bottom: 0;
-  color: #fff;
+  color: $color-white;
   position: absolute;
   width: 100%;
   z-index: 54;
+
   h1 {
     font-size: 35px;
     line-height: 40px;
     margin: 0 0 0 20px;
     width: 75%;
+
     a {
-      color: #fff;
+      @include transition(color .25s ease-out);
+      color: $color-white;
       font-weight: 700;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-      -moz-transition: color .25s ease-out;
-      -ms-transition: color .25s ease-out;
-      -o-transition: color .25s ease-out;
-      -webkit-transition: color .25s ease-out;
-      transition: color .25s ease-out;
     }
   }
 }
@@ -88,6 +90,7 @@
   margin: 15px 20px 18px 22px;
   padding: 0;
   vertical-align: middle;
+
   li {
     border-left: 1px solid #dedede;
     display: table-cell;
@@ -95,13 +98,16 @@
     padding: 0 10px;
     vertical-align: middle;
     width: auto;
+
     &:first-child {
       border-left: 0;
       padding-left: 0;
     }
+
     a {
-      color: #fff;
+      color: $color-white;
       font-weight: 700;
+
       &:hover {
         color: #0af;
       }
@@ -116,12 +122,10 @@
 }
 
 .hero-left-pane {
+  @include box-sizing(border-box);
   background: #000;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   height: 421px;
   left: 0;
   overflow: hidden;
@@ -140,13 +144,11 @@
 }
 
 .hero-headline-list-pane {
+  @include box-sizing(border-box);
   background: #f8f8f8;
   border-bottom: 1px solid #dbdbdb;
   border-right: 1px solid #ccc;
   border-top: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   height: 421px;
   left: 400px;
   position: absolute;
@@ -161,7 +163,7 @@
 }
 
 .hero-list-item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $color-grey-super-light;
   color: $color-grey-medium;
   display: block;
   float: left;
@@ -187,7 +189,7 @@ a.hero-list-anchor {
 
 .hero-head {
   color: $color-grey-light;
-  font-family: 'Futura Today Bold',arial,sans-serif;
+  font-family: $font-family;
   font-size: 16px;
   font-weight: 400;
   left: 20px;
@@ -212,6 +214,7 @@ a.hero-list-anchor {
   margin: -29px 0 0 0;
   overflow: visible;
   position: relative;
+
   &:before {
     background: url(img/shadow-border.png) -21px -26px;
     content: '';
@@ -222,6 +225,7 @@ a.hero-list-anchor {
     width: 18px;
     z-index: 2;
   }
+
   &:after {
     background: url(img/shadow-border.png) -40px -26px;
     content: '';

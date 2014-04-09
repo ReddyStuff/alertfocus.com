@@ -1,5 +1,5 @@
-.headline-asset-item-tile {
-  background-color: #009bff;
+.headline-tile {
+  background-color: $color-blue-light;
   background-color: rgba(0, 0, 0, 0.8);
 
   & img {
@@ -11,9 +11,7 @@
 .headlines-header {
   background: #f2f2f2;
   border-bottom: 1px solid #e1e1e1;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
   position: relative;
   padding: 10px 20px 9px;
   height: auto;
@@ -23,12 +21,24 @@
 .headlines-header-title {
   color: $color-grey-medium;
   float: left;
-  font-family: 'Futura Today Bold',arial,sans-serif;
+  font-family: $font-family;
   font-size: 15px;
   font-weight: 400;
   margin: 6px 5px 0 0;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 $color-white;
+
+  &.single {
+    width: 82%;
+  }
+}
+
+.headlines-header-time {
+  float: right;
+  width:15%;
+  margin: 6px 5px 0 0;
+  font-size: 10px;
+  text-align:right
 }
 
 .last-updated {
@@ -38,9 +48,9 @@
   margin: 10px 0 0;
 }
 
-.headline-asset-item {
+.headline-item {
   background: url(img/headlines-shadow.png) 0 -1px no-repeat;
-  color: #fff;
+  color: $color-white;
   float: left;
   height: 243px;
   margin: 8px 0 7px 14px;
@@ -53,7 +63,7 @@
   }
 }
 
-.headline-asset-item-tile {
+.headline-tile {
   height: 220px;
   left: 10px;
   opacity: 1;
@@ -63,33 +73,34 @@
   width: 200px;
 }
 
-.headline-asset-item:hover .headline-asset-item-front {
+.headline-item:hover .headline-item-front {
   opacity: 1;
   z-index: 0;
+
   .title {
     opacity: 0;
     visibility: hidden;
   }
 }
 
-.headline-asset-item-back {
+.headline-item-back {
   opacity: 0;
 }
 
-.headline-asset-item:hover .headline-asset-item-back {
+.headline-item:hover .headline-item-back {
   z-index: 1;
   opacity: 1;
 }
 
-.headline-asset-item-back, .headline-asset-item:hover .headline-asset-item-front .title {
+.headline-item-back, .headline-item:hover .headline-item-front .title {
   @include transition(opacity .2s ease-in-out);
 }
 
-.headline-asset-item-front {
+.headline-item-front {
   z-index: 1;
 }
 
-.headline-asset-item-front-title {
+.headline-item-front-title {
   display: table;
   font-weight: 700;
   margin: 0;
@@ -99,7 +110,7 @@
   font-feature-settings: "liga","dlig","kern","opbd","titl";
 }
 
-.headline-asset-item-front > .image {
+.headline-item-front > .image {
   background: transparent url(img/pixel-black-70percent.png) repeat top left;
   border-top: 1px solid #000;
   bottom: 0;
@@ -111,25 +122,31 @@
   width: 180px;
 }
 
-.headline-asset-item {
-  color: #fff;
-  .headline-grid-load-story {
-    color: #fff;
+.headline-item {
+  color: $color-white;
+
+  .headline-grid-story {
+    color: $color-white;
     width: 100%;
     height: 100%;
     display: inline-block;
+
+    &:hover img {
+      @include transition(all .2s ease-in-out);
+      @include scale(1.2);
+    }
   }
 }
 
-.headline-asset-item-back-text {
-  color: #fff;
+.headline-item-back-text {
+  color: $color-white;
   color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
   line-height: 16px;
   margin: 20px 20px 0;
 }
 
-.headline-asset-item-back-title {
+.headline-item-back-title {
   font-size: 14px;
   font-weight: 700;
   left: 18px;

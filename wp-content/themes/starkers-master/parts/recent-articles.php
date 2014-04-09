@@ -12,26 +12,26 @@
         $posttags = get_the_tags();
     ?>
 
-    <div class="headline headline-asset-item headline-asset-item-card">
+    <div class="headline-item">
         <span class="parent-label cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
             <?php foreach($posttags as $tag) {echo $tag->name . ' ';} ?>
         </span>
-        <a class="anchor headline-grid-load-story" href="<?php the_permalink(); ?>" title="Click to View Article">
+        <a class="headline-grid-story" href="<?php the_permalink(); ?>" title="Click to View Article">
 
-            <div class="headline-asset-item-front tile headline-asset-item-tile">
+            <div class="headline-item-front headline-tile">
                 <div class="image-wrap">
                     <?php include('post-thumbnail.php'); ?>
                 </div>
 
-                <h3 class="title image headline-asset-item-front-title">
+                <h3 class="title image headline-item-front-title">
                     <span class="content-info-icon-text"><?php the_title(); ?></span>
                 </h3>
             </div>
 
-            <div class="headline-asset-item-back tile headline-asset-item-tile">
-                <h3 class="title headline-asset-item-back-title"><?php the_title(); ?></h3>
+            <div class="headline-item-back headline-tile">
+                <h3 class="title headline-item-back-title"><?php the_title(); ?></h3>
 
-                <p class="headline-asset-item-back-text">
+                <p class="headline-item-back-text">
                     <?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,15); ?>
                 </p>
             </div>

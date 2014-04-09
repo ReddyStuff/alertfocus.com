@@ -41,7 +41,7 @@
   left: 20px;
   right: 20px;
   line-height: .5;
-  background-image: -webkit-linear-gradient( 0deg, #e6e6e6 35%, transparent 35%, transparent), -webkit-linear-gradient( 0deg, transparent, transparent 65%, #e6e6e6 65%);
+  background-image: -webkit-linear-gradient( 0deg, $color-grey-super-light 35%, transparent 35%, transparent), -webkit-linear-gradient( 0deg, transparent, transparent 65%, $color-grey-super-light 65%);
 }
 
 blockquote {
@@ -50,24 +50,26 @@ blockquote {
   padding: 40px 20px;
   margin: 0 30px 20px 0;
   background-color: transparent;
-  border: 1px solid #e6e6e6;
+  border: 1px solid $color-grey-super-light;
   font-weight: bold;
   line-height: 1.8;
   text-transform: uppercase;
-  color: #666;
+  color: $color-grey-medium;
   position: relative;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
   @include transition(all .2s ease-in-out);
+
   &:hover {
-    background-color: #666;
-    color: #e6e6e6;
+    background-color: $color-grey-medium;
+    color: $color-grey-super-light;
   }
+
   &:before {
     content: '\201C';
     @extend %blockquote-bar;
     top: 20px;
     &:hover {
-      color: #009bff;
+      color: $color-blue-light;
     }
   }
   &:after {

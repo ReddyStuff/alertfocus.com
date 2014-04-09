@@ -15,20 +15,20 @@
 
 <?php if ( have_posts() ): ?>
 
-    <article class="cards" id="cards" style="top:50px;">
+    <article class="cards">
         <div class="card-container">
             <div class="card-wrap">
-                <section class="home card card-bumped" data-section-id="home" data-subsection-id="" id="section_home">
-                    <div class="card-full-width" id="card_full_width_main">
+                <section class="card" >
+                    <div class="card-full-width" >
                         <div class="card-primary-wrapper clearfix">
                             <div class="card-suspender-color alert"></div>
 
                             <?php include('parts/quick-links.php'); ?>
 
-                            <section class="card-primary hero-module" id="module-position-4">
+                            <section class="card-primary hero-module">
                                 <div class="front-bump-shadow"></div>
 
-                                <section class="card-primary headline-grid-module" id="module-position-10">
+                                <section class="card-primary headline-grid-module">
                                     <div class="headlines-header">
                                         <h5 class="headlines-header-title">Search Results for "<?php echo get_search_query(); ?>"</h5>
                                     </div>
@@ -48,7 +48,7 @@
 
                         <div class="sidebar sidebar-home">
                             <div class="sidebar-wrapper">
-                                <div class="sidebar-scrollable-window">
+                                <div>
 
                                     <?php include('parts/contact-sidebar.php'); ?>
 
@@ -65,20 +65,20 @@
 
 <?php else: ?>
 
-    <article class="cards" id="cards" style="top:50px;">
+    <article class="cards">
         <div class="card-container">
             <div class="card-wrap">
-                <section class="home card card-bumped" data-section-id="home" data-subsection-id="" id="section_home">
-                    <div class="card-full-width" id="card_full_width_main">
+                <section class="card" >
+                    <div class="card-full-width" >
                         <div class="card-primary-wrapper clearfix">
                             <div class="card-suspender-color alert"></div>
 
                             <?php include('parts/quick-links.php'); ?>
 
-                            <section class="card-primary hero-module" id="module-position-4">
+                            <section class="card-primary hero-module">
                                 <div class="front-bump-shadow"></div>
 
-                                <section class="card-primary headline-grid-module" id="module-position-10">
+                                <section class="card-primary headline-grid-module">
                                     <div class="headlines-header">
                                         <h5 class="headlines-header-title">Search Results for "<?php echo get_search_query(); ?>"</h5>
                                     </div>
@@ -102,7 +102,7 @@
 
                         <div class="sidebar sidebar-home">
                             <div class="sidebar-wrapper">
-                                <div class="sidebar-scrollable-window">
+                                <div>
 
                                     <?php include('parts/contact-sidebar.php'); ?>
 

@@ -13,18 +13,18 @@ $quickLinks = get_categories( $argsQuickLinks );
 ?>
 
 <section class="card-suspender">
-    <p class="slst-header">Quick Links</p>
+    <p class="card-suspender-header">Quick Links</p>
 
     <ul class="quick-links-list">
 
         <li class="quick-links-item">
-            <a class="clst-link" href="/" title="Home">Home</a>
+            <a class="card-suspender-link" href="/" title="Home">Home</a>
         </li>
 
         <?php foreach($quickLinks as $cat) {
             echo '
             <li class="quick-links-item">
-                <a class="clst-link"
+                <a class="card-suspender-link"
                     href="' . get_category_link($cat->term_id) . '"
                     title="'. esc_attr($cat->name) . '">'
                         . $cat->cat_name .
@@ -34,12 +34,12 @@ $quickLinks = get_categories( $argsQuickLinks );
 
         <?php $category_relieve = get_category_link( 2 ); ?>
         <li class="quick-links-item">
-            <a class="clst-link" href="<?php echo esc_url( $category_relieve ); ?>" title="Relieve">Relieve</a>
+            <a class="card-suspender-link" href="<?php echo esc_url( $category_relieve ); ?>" title="Relieve">Relieve</a>
         </li>
 
         <?php $category_perform = get_category_link( 3 ); ?>
         <li class="quick-links-item">
-            <a class="clst-link" href="<?php echo esc_url( $category_perform ); ?>" title="Perform">Perform</a>
+            <a class="card-suspender-link" href="<?php echo esc_url( $category_perform ); ?>" title="Perform">Perform</a>
         </li>
 
     </ul>

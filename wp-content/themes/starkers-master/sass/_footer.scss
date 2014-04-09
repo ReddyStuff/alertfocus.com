@@ -29,12 +29,12 @@ footer {
 
 .page-footer-link-text {
   color: $color-grey-medium;
-  font-family: 'Futura Today Bold',arial,sans-serif;
+  font-family: $font-family;
   font-size: 15px;
   font-weight: 400;
   margin: 6px 5px 0 0;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 $color-white;
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ footer {
   overflow: hidden;
   padding: 20px 0 14px;
   background: transparent url(img/paper-noise-bar.png) repeat top left;
-  color: #999;
+  color: $color-grey-light;
 }
 
 .site-footer-bar-border {
@@ -63,5 +63,5 @@ footer {
 
 .site-footer-text {
   margin: 0 auto;
-  color: #999;
+  color: $color-grey-light;
 }

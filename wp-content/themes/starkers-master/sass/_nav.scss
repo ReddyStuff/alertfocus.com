@@ -1,5 +1,5 @@
 .site-nav {
-  border-top: 1px solid #343434;
+  border-top: 1px solid $color-grey-heavy;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   height: 39px;
   position: relative;
@@ -22,9 +22,12 @@
 
 .site-nav-item {
   float: left;
+  width: auto;
+
   &.site-nav-first-primary-item {
-    border-left: 1px solid #343434;
+    border-left: 1px solid $color-grey-heavy;
   }
+
   &:hover {
     transition: background-color .15s;
   }
@@ -40,8 +43,9 @@
 }
 
 .site-nav-link {
-  border-right: 1px solid #343434;
-  color: #fff;
+  @include transition(all .2s ease-in-out);
+  border-right: 1px solid $color-grey-heavy;
+  color: $color-white;
   display: block;
   position: relative;
   font-family: 'Futura Today Bold',Helvetica,Arial,sans-serif;
@@ -50,53 +54,55 @@
   text-decoration: none;
   text-shadow: 0 1px 0 #000;
   text-transform: uppercase;
+
   &:hover, &:visited {
-    color: #fff;
+    color: $color-white;
   }
 }
 
 .site-header-inner-wrap {
-  position: fixed;
   @include gradient-vertical($startColor: rgba(69,72,77,1), $endColor: rgba(68,68,68,1));
+  position: fixed;
   min-width: 980px;
   width: 100%;
   z-index: 9000;
 }
 
 .site-nav-text-span {
-  &.site-nav-first-primary-span {
-    margin-left: 0;
-  }
   padding: 0 15px;
   height: 40px;
   line-height: 40px;
   margin: -1px -1px 0 0;
   text-align: center;
+
+  &.site-nav-first-primary-span {
+    margin-left: 0;
+  }
 }
 
 span.parent-label {
   &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap, &.cat-wrap-around {
-    background-color: #009bff;
+    background-color: $color-blue-light;
   }
 
   &.cat-academic, &.cat-evidence, &.cat-relieve {
-    background: #b81800;
+    background: $color-red;
   }
 
   &.cat-add, &.cat-executive, &.cat-sales, &.cat-sales-training {
-    background: #9600b4;
+    background: $color-purple;
   }
 
   &.cat-addictions, &.cat-links, &.cat-sleep {
-    background: #00a53c;
+    background: $color-green;
   }
 
   &.cat-autism, &.cat-migraine, &.cat-sports {
-    background: #fa5f00;
+    background: $color-orange;
   }
 
   &.cat-criminal, &.cat-criminal-violence, &.cat-military, &.cat-stress {
-    background: #ffc000;
+    background: $color-yellow;
   }
 
   &.cat-uncategorized {
@@ -106,50 +112,50 @@ span.parent-label {
 
 ul.site-nav-list li a {
   &.cat-about, &.cat-eating, &.cat-perform, &.cat-wrap, &.cat-wrap-around {
-    border-top-color: #009bff;
+    border-top-color: $color-blue-light;
 
     &:hover {
-      background: #009bff;
+      background: $color-blue-light;
     }
   }
 
   &.cat-academic, &.cat-evidence, &.cat-relieve {
-    border-top-color: #b81800;
+    border-top-color: $color-red;
 
     &:hover {
-      background: #b81800;
+      background: $color-red;
     }
   }
 
   &.cat-add, &.cat-executive, &.cat-sales, &.cat-sales-training {
-    border-top-color: #9600b4;
+    border-top-color: $color-purple;
 
     &:hover {
-      background: #9600b4;
+      background: $color-purple;
     }
   }
 
   &.cat-addictions, &.cat-links, &.cat-sleep {
-    border-top-color: #00a53c;
+    border-top-color: $color-green;
 
     &:hover {
-      background: #00a53c;
+      background: $color-green;
     }
   }
 
   &.cat-autism, &.cat-migraine, &.cat-sports {
-    border-top-color: #fa5f00;
+    border-top-color: $color-orange;
 
     &:hover {
-      background: #fa5f00;
+      background: $color-orange;
     }
   }
 
   &.cat-criminal, &.cat-criminal-violence, &.cat-military, &.cat-stress {
-    border-top-color: #ffc000;
+    border-top-color: $color-yellow;
 
     &:hover {
-      background: #ffc000;
+      background: $color-yellow;
     }
   }
 }
@@ -168,6 +174,7 @@ ul.site-nav-list li a {
 }
 
 .search-field {
+  @include transition(all .2s ease-in-out);
   background-color: transparent;
   background-image: url(img/icon-search.png);
   background-position: 4px center;
@@ -179,14 +186,13 @@ ul.site-nav-list li a {
   margin: 8px 0;
   padding: 2px 0 0px 34px;
   position: relative;
-  @include transition(all .2s ease-in-out);
   width: 0;
 }
 
 .search-field:focus {
   background-color: #f2f2f2;
-  color: #666;
-  font-family: 'Futura Today Bold',Helvetica,Arial,sans-serif;
+  color: $color-grey-medium;
+  font-family: $font-family;
   font-size: 11px;
   text-transform: uppercase;
   cursor: text;
@@ -202,13 +208,14 @@ input[type="search"] {
 .site-nav-icon-link {
   height: 40px;
   transition: background-color .15s;
+
   &:hover {
     background: $color-grey-dark;
   }
 }
 
 .site-nav-first-secondary-link {
-  border-left: 1px solid #343434;
+  border-left: 1px solid $color-grey-heavy;
   padding-left: 6px;
 }
 

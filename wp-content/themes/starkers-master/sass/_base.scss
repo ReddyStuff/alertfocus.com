@@ -19,12 +19,12 @@ html {
   -ms-text-size-adjust: 100%;
   width: 100%;
   font-family: sans-serif;
-  color: #222;
+  color: $color-almost-black;
 }
 
 button, input, select, textarea {
   font-family: sans-serif;
-  color: #222;
+  color: $color-almost-black;
 }
 
 body {
@@ -38,17 +38,21 @@ body {
 }
 
 a {
-  color: #0af;
+  color: $color-link;
   text-decoration: none;
+
   &:visited {
-    color: #4ec4ff;
+    color: $color-link-visited;
   }
+
   &:hover {
-    color: #1a95d2;
+    color: $color-link-hover;
   }
+
   &:focus {
     outline: thin dotted;
   }
+
   &:hover, &:active {
     outline: 0;
   }
@@ -193,15 +197,16 @@ input {
   &[disabled] {
     cursor: default;
   }
+
   &[type=checkbox], &[type=radio] {
     box-sizing: border-box;
     padding: 0;
   }
+
   &[type=search] {
     -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+    @include box-sizing(content-box);
+
     &::-webkit-search-decoration, &::-webkit-search-cancel-button {
       -webkit-appearance: none;
     }
@@ -245,7 +250,7 @@ td {
 }
 
 body {
-  background: #f6f6f6 url(img/noise_f6f6f6.png) repeat top left;
+  background: $color-background url(img/noise_f6f6f6.png) repeat top left;
   font-family: Arial,sans-serif;
   min-height: 100%;
   min-width: 980px;

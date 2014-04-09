@@ -3,6 +3,7 @@
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  top: 50px;
   width: 100%;
   z-index: 0;
 }
@@ -33,7 +34,7 @@
 .card-suspender {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   clear: both;
-  color: #fff;
+  color: $color-white;
   float: left;
   margin-top: -1px;
   position: relative;
@@ -47,11 +48,11 @@
   position: absolute;
   top: 0;
   width: 120px;
-  background-color: #009bff;
+  background-color: $color-blue-light;
 }
 
 .card-container {
-  background: #f6f6f6 url(img/noise_f6f6f6.png) repeat top left;
+  background: $color-background url(img/noise_f6f6f6.png) repeat top left;
   left: 0;
   padding-bottom: 20px;
   position: relative;
@@ -71,6 +72,7 @@
   position: relative;
   width: 840px;
   z-index: 5;
+
   div.sh_bottom {
     bottom: -45px;
     height: 45px;
@@ -78,6 +80,7 @@
     right: 0;
     width: 100%;
     z-index: 0;
+
     &:after {
       background: transparent url(img/PageCurlDropShadRightR_0906.png) 100% 0 no-repeat;
       bottom: 0;
@@ -88,6 +91,7 @@
       z-index: 0;
       width: 404px;
     }
+
     &:before {
       background: transparent url(img/PageCurlDropShadLeftR_0906.png) 0 0 no-repeat;
       bottom: 0;
@@ -114,24 +118,26 @@
   }
 }
 
-.card-suspender .clst-link {
+.card-suspender .card-suspender-link {
   display: block;
   padding: 10px 12px 10px 15px;
 }
 
-.clst-link {
+.card-suspender-link {
   color: inherit;
+
   &:visited, &:active {
     color: inherit;
   }
+
   &:hover {
     color: inherit;
     text-decoration: underline;
   }
 }
 
-.card-suspender .slst-header {
-  color: #fff;
+.card-suspender .card-suspender-header {
+  color: $color-white;
   display: block;
   font-size: 13px;
   font-weight: 700;
@@ -144,5 +150,9 @@
 }
 
 .card-suspender-color.alert {
-  background-color: #ffc000;
+  background-color: $color-yellow;
+}
+
+.card-suspender-color.calm {
+  background-color: $color-blue-light;
 }

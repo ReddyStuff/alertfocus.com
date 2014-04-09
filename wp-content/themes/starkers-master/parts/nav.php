@@ -16,7 +16,7 @@
 <div class="site-header-inner-wrap">
     <nav class="site-nav">
         <ul class="site-nav-list">
-            <li class="site-nav-item" style="width: auto;">
+            <li class="site-nav-item">
                 <a class="site-nav-link site-nav-logo-link" href="/">
                     <span class="site-nav-span site-nav-text-span site-nav-first-primary-span">alertfocus.com</span>
                 </a>
@@ -24,7 +24,7 @@
 
             <?php foreach($categories as $cat) {
                 echo '
-                <li class="site-nav-item" style="width: auto;">
+                <li class="site-nav-item">
                     <a class="site-nav-link site-nav-text-link cat-' . $cat->slug . '"
                         href="' . get_category_link($cat->term_id) . '"
                         title="'. esc_attr($cat->name) . '">

@@ -15,11 +15,11 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-    <article class="cards" id="cards" style="top:50px;">
+    <article class="cards">
         <div class="card-container">
             <div class="card-wrap">
-                <section class="home card card-bumped" data-section-id="home" data-subsection-id="" id="section_home">
-                    <div class="card-full-width" id="card_full_width_main">
+                <section class="home card" >
+                    <div class="card-full-width" >
                         <div class="card-primary-wrapper clearfix">
                             <div class="card-suspender-color alert"></div>
 
@@ -29,12 +29,9 @@
                                 <div class="front-bump-shadow"></div>
 
                                 <section class="card-primary headline-grid-module single">
-                                    <div class="headlines-header" style="height: auto;overflow: auto;">
-                                        <h5 style="width:82%;float: left;" class="headlines-header-title"><?php the_title(); ?></h5>
-                                        <time style="width:15%; float: right;margin: 6px 5px 0 0;font-size: 10px;text-align:right" datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_time( 'Y-m-d' ); ?></time>
-                                    </div>
-                                    <div>
-
+                                    <div class="headlines-header">
+                                        <h5 class="headlines-header-title single"><?php the_title(); ?></h5>
+                                        <time class="headlines-header-time" datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_time( 'Y-m-d' ); ?></time>
                                     </div>
 
                                     <div>
@@ -48,7 +45,7 @@
 
                         <div class="sidebar sidebar-home">
                             <div class="sidebar-wrapper">
-                                <div class="sidebar-scrollable-window">
+                                <div>
 
                                     <?php include('parts/contact-sidebar.php'); ?>
 
