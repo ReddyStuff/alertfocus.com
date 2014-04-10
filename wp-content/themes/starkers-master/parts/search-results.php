@@ -13,7 +13,7 @@
                         <?php include('post-thumbnail.php'); ?>
                     </div>
 
-                    <h3 class="image headline-item-front-title">
+                    <h3 class="title image headline-item-front-title">
                         <span class="content-info-icon-text"><?php the_title(); ?></span>
                     </h3>
                 </div>
