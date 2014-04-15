@@ -16,7 +16,7 @@
         <span class="parent-label cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
             <?php foreach($posttags as $tag) {echo $tag->name . ' ';} ?>
         </span>
-        <a class="headline-grid-story" href="<?php the_permalink(); ?>" title="Click to View Article">
+        <a class="headline-grid-story" href="<?php the_permalink(); ?>">
 
             <div class="headline-item-front headline-tile">
                 <div class="image-wrap">
@@ -28,11 +28,11 @@
                 </h3>
             </div>
 
-            <div class="headline-item-back headline-tile">
+            <div class="headline-item-back headline-tile cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
                 <h3 class="title headline-item-back-title"><?php the_title(); ?></h3>
 
                 <p class="headline-item-back-text">
-                    <?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,15); ?>
+                    <?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,12); ?>
                 </p>
             </div>
 

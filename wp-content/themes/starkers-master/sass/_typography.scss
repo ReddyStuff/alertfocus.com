@@ -69,7 +69,7 @@ blockquote {
     @extend %blockquote-bar;
     top: 20px;
     &:hover {
-      color: $color-blue-light;
+      color: $color-link-hover;
     }
   }
   &:after {

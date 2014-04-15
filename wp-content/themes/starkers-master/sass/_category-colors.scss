@@ -1,0 +1,244 @@
+.card-suspender-color.alert {
+  background-color: $color-yellow-002;
+}
+
+.card-suspender-color.calm {
+  background-color: $color-blue-light-003;
+}
+
+span.parent-label, div.headline-tile {
+  &.cat-about {
+    background-color: $color-blue-002;
+  }
+
+  &.cat-perform {
+    background-color: $color-blue-light-003;
+  }
+
+  &.cat-wrap, &.cat-wrap-around {
+    background-color: $color-blue-001;
+  }
+
+  &.cat-eating {
+    background-color: $color-blue-light-001;
+  }
+
+  &.cat-academic {
+    background: $color-red-001;
+  }
+
+  &.cat-evidence {
+    background: $color-red-002;
+  }
+
+  &.cat-relieve {
+    background: $color-red-003;
+  }
+
+  &.cat-add {
+    background: $color-purple-002;
+  }
+
+  &.cat-executive {
+    background: $color-pink-001;
+  }
+
+  &.cat-sales, &.cat-sales-training {
+    background: $color-green-003;
+  }
+
+  &.cat-addictions {
+    background: $color-green-001;
+  }
+
+  &.cat-links {
+    background: $color-green-002;
+  }
+
+  &.cat-sleep {
+    background: $color-purple-001;
+  }
+
+  &.cat-autism {
+    background: $color-orange-001;
+  }
+
+  &.cat-migraine {
+    background: $color-orange-002;
+  }
+
+  &.cat-sports {
+    background: $color-orange-003;
+  }
+
+  &.cat-criminal, &.cat-criminal-violence {
+    background: $color-yellow-001;
+  }
+
+  &.cat-military {
+    background: $color-yellow-002;
+  }
+
+  &.cat-stress {
+    background: $color-yellow-003;
+  }
+
+  &.cat-uncategorized {
+    background: $color-grey-medium;
+  }
+}
+
+ul.site-nav-list li a {
+  &.cat-about {
+    border-top-color: $color-blue-002;
+
+    &:hover {
+      background: $color-blue-002;
+    }
+  }
+
+  &.cat-eating {
+    border-top-color: $color-blue-light-001;
+
+    &:hover {
+      background: $color-blue-light-001;
+    }
+  }
+
+  &.cat-perform {
+    border-top-color: $color-blue-light-003;
+
+    &:hover {
+      background: $color-blue-light-003;
+    }
+  }
+
+  &.cat-wrap, &.cat-wrap-around {
+    border-top-color: $color-blue-001;
+
+    &:hover {
+      background: $color-blue-001;
+    }
+  }
+
+  &.cat-academic {
+    border-top-color: $color-red-001;
+
+    &:hover {
+      background: $color-red-001;
+    }
+  }
+
+  &.cat-evidence {
+    border-top-color: $color-red-002;
+
+    &:hover {
+      background: $color-red-002;
+    }
+  }
+
+  &.cat-relieve {
+    border-top-color: $color-red-003;
+
+    &:hover {
+      background: $color-red-003;
+    }
+  }
+
+  &.cat-add {
+    border-top-color: $color-purple-002;
+
+    &:hover {
+      background: $color-purple-002;
+    }
+  }
+
+  &.cat-executive {
+    border-top-color: $color-pink-001;
+
+    &:hover {
+      background: $color-pink-001;
+    }
+  }
+
+  &.cat-sales, &.cat-sales-training {
+    border-top-color: $color-green-003;
+
+    &:hover {
+      background: $color-green-003;
+    }
+  }
+
+  &.cat-addictions {
+    border-top-color: $color-green-001;
+
+    &:hover {
+      background: $color-green-001;
+    }
+  }
+
+  &.cat-links {
+    border-top-color: $color-green-002;
+
+    &:hover {
+      background: $color-green-002;
+    }
+  }
+
+  &.cat-sleep {
+    border-top-color: $color-purple-001;
+
+    &:hover {
+      background: $color-purple-001;
+    }
+  }
+
+  &.cat-autism {
+    border-top-color: $color-orange-001;
+
+    &:hover {
+      background: $color-orange-001;
+    }
+  }
+
+  &.cat-migraine {
+    border-top-color: $color-orange-002;
+
+    &:hover {
+      background: $color-orange-002;
+    }
+  }
+
+  &.cat-sports {
+    border-top-color: $color-orange-003;
+
+    &:hover {
+      background: $color-orange-003;
+    }
+  }
+
+  &.cat-criminal, &.cat-criminal-violence {
+    border-top-color: $color-yellow-001;
+
+    &:hover {
+      background: $color-yellow-001;
+    }
+  }
+
+  &.cat-military {
+    border-top-color: $color-yellow-002;
+
+    &:hover {
+      background: $color-yellow-002;
+    }
+  }
+
+  &.cat-stress {
+    border-top-color: $color-yellow-003;
+
+    &:hover {
+      background: $color-yellow-003;
+    }
+  }
+}
+

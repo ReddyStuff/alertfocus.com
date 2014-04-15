@@ -5,6 +5,11 @@
   float: right;
 }
 
+.related-articles-header-title {
+  @extend .headlines-header-title;
+  font-size: 14px;
+}
+
 .related-articles {
   position: relative;
   text-align: center;

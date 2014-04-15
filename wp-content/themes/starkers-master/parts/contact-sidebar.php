@@ -21,7 +21,16 @@
                         Bala Cynwyd, PA 19004
                     </p>
                     <p class="most-popular-sidebar-headline">
-                        610.668.3223
+                        Email:
+                        <br/>
+                        <a href="mailto:garyames@alertfocus.com" title="Contact Gary Ames">
+                            garyames@alertfocus.com
+                        </a>
+                    </p>
+                    <p class="most-popular-sidebar-headline">
+                        Phone:
+                        <br/>
+                        (610) 668-3223
                     </p>
                 </li>
             </ul>

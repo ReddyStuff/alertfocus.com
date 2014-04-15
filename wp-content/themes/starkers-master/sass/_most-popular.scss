@@ -1,8 +1,6 @@
 .most-popular-sidebar-headline {
-  color: $color-white;
-  font-size: 12px;
-  line-height: 1.4;
-  font-weight: 700;
+  @extend .sidebar-title;
+  margin-bottom: 10px;
 }
 
 .most-popular-sidebar-item {

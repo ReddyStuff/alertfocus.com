@@ -1,5 +1,5 @@
 .headline-tile {
-  background-color: $color-blue-light;
+  background-color: $color-link-hover;
   background-color: rgba(0, 0, 0, 0.8);
 
   & img {
@@ -22,7 +22,7 @@
   color: $color-grey-medium;
   float: left;
   font-family: $font-family;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   margin: 6px 5px 0 0;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
   color: $color-grey-light;
   float: left;
   font-size: 11px;
-  margin: 10px 0 0;
+  margin: 12px 0 0 4px;
 }
 
 .headline-item {
@@ -60,6 +60,7 @@
   > .parent-label {
     left: 10px;
     top: 10px;
+    width: 188px;
   }
 }
 
@@ -150,7 +151,7 @@
   font-size: 14px;
   font-weight: 700;
   left: 18px;
-  margin: 30px 20px 0;
+  margin: 35px 20px 0;
   top: 40px;
   width: 165px;
 }

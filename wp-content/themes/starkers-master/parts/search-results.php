@@ -18,11 +18,11 @@
                     </h3>
                 </div>
 
-                <div class="headline-item-back headline-tile">
+                <div class="headline-item-back headline-tile cat-<?php foreach($posttags as $tag) {echo strtolower($tag->name . ' ');} ?>">
                     <h3 class="title headline-item-back-title"><?php the_title(); ?></h3>
 
                     <p class="headline-item-back-text">
-                        <?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,15); ?>
+                        <?php $excerpt = get_the_excerpt(); echo string_limit_words($excerpt,12); ?>
                     </p>
                 </div>
 
