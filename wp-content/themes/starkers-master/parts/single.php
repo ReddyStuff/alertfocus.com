@@ -16,37 +16,16 @@
     ));
     ?>
 
+    <?php the_content(); ?>
+
     <?php if ( have_posts() ) : ?>
 
-    <div class="related-articles-container">
-        <div class="headlines-header">
-            <h5 class="related-articles-header-title">Related Articles</h5>
-        </div>
-        <div class="related-articles">
-            <ul class="related-article-list">
-                <?php while ( have_posts() ) : the_post(); ?>
-                <?php
-                    echo '
-                        <li class="hero-list-item first">
-                            <a class="hero-list-anchor"
-                                href="' . get_permalink() . '"
-                                title="' . get_the_title() .'">'
-                                . get_the_title() .
-                            '</a>
-                        </li>
-                    ';
-                ?>
-                <?php endwhile; ?>
-            </ul>
-            <div class="clearfix"></div>
-        </div>
-    </div>
+    <?php include('related-articles.php'); ?>
 
     <?php else : endif; wp_reset_query(); ?>
 
-    <?php the_content(); ?>
+    <?php include('categories.php'); ?>
 
     <div class="clearfix"></div>
 </div>
 
-<?php include('categories.php'); ?>
