@@ -6,14 +6,16 @@ footer {
 
 .page-footer-links-container {
   width: 88%;
-  margin: 80px auto 60px;
+  margin: 100px auto 60px;
   text-align: center;
 }
 
 .page-footer-link-container {
   display: inline-block;
   width: 24%;
+  min-height: 200px;
   text-align:center;
+  vertical-align: bottom;
 }
 
 .page-footer-link {
@@ -32,7 +34,7 @@ footer {
   font-family: $font-family;
   font-size: 15px;
   font-weight: 400;
-  margin: 6px 5px 0 0;
+  margin: 0 5px 0 0;
   text-transform: uppercase;
   text-shadow: 0 1px 0 $color-white;
   text-align: center;

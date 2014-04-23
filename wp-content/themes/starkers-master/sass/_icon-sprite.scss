@@ -4,44 +4,48 @@
   top: 0;
   width: 80px;
   height: 80px;
-  margin: 20px auto 0;
+  margin: 20px auto 10px;
   text-decoration: none;
   background-image: url(img/icon-sprite.png);
-  @include transition(top .15s);
+  opacity: 0.6;
+  @include transition(all .2s);
 }
 
-.icon-subscribe {
+.icon-call {
   @extend %icon-sprite;
   background-position: 0 0;
 
   &:hover {
+    opacity: 0.9;
     top: -10px;
   }
 }
 
-.icon-rss {
-  @extend %icon-sprite;
-  background-position: 240px 0;
-
-  &:hover {
-    top: -10px;
-  }
-}
-
-.icon-contact {
+.icon-email {
   @extend %icon-sprite;
   background-position: 160px 0;
 
   &:hover {
+    opacity: 0.9;
     top: -10px;
   }
 }
 
-.icon-feedback {
+.icon-address {
   @extend %icon-sprite;
   background-position: 80px 0;
 
   &:hover {
+    opacity: 0.9;
     top: -10px;
   }
 }
+
+//.icon-feedback {
+//  @extend %icon-sprite;
+//  background-position: 80px 0;
+//
+//  &:hover {
+//    top: -10px;
+//  }
+//}
