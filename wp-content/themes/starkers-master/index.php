@@ -66,11 +66,9 @@
 
                         <div class="sidebar">
                             <div class="sidebar-wrapper">
-                                <div>
 
-                                    <?php include('parts/contact-sidebar.php'); ?>
+                                <?php include('parts/contact-sidebar.php'); ?>
 
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -117,11 +115,9 @@
 
                         <div class="sidebar sidebar-home">
                             <div class="sidebar-wrapper">
-                                <div>
 
-                                    <?php include('parts/contact-sidebar.php'); ?>
+                                <?php include('parts/contact-sidebar.php'); ?>
 
-                                </div>
                             </div>
                         </div>
                     </div>
