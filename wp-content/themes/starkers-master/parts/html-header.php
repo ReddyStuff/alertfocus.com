@@ -14,4 +14,3 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php include_once("../analyticstracking.php") ?>
