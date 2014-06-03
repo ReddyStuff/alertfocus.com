@@ -5,7 +5,7 @@
 <!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
 <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-    <title><?php bloginfo( 'name' ); ?><?php wp_title( '|' ); ?></title>
+    <title><?php bloginfo( 'name' ); ?></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=980">
