@@ -1,3 +1,15 @@
+.container-shareThis {
+  width: 50%;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.shareThis-header-title {
+  @extend .categories-header-title;
+  float: none;
+  margin: 6px 5px 5px 0;
+}
+
 @media only screen and (max-width: 1149px) {
   #sthoverbuttons {
     display: none;
