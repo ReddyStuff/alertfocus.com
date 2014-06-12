@@ -47,8 +47,6 @@
 	
 	======================================================================================================================== */
 
-
-
 	/* ========================================================================================================================
 	
 	Scripts
@@ -63,8 +61,8 @@
 	 */
 
 	function script_enqueuer() {
-		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
-		wp_enqueue_script( 'site' );
+    //		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
+    //		wp_enqueue_script( 'site' );
 
 		wp_register_style( 'screen', get_template_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
@@ -77,15 +75,15 @@
 	======================================================================================================================== */
 
 	/**
-	 * Custom callback for outputting comments 
+	 * Custom callback for outputting comments
 	 *
 	 * @return void
 	 * @author Keir Whitaker
-	 */
+
 	function starkers_comment( $comment, $args, $depth ) {
-		$GLOBALS['comment'] = $comment; 
+		$GLOBALS['comment'] = $comment;
 		?>
-		<?php if ( $comment->comment_approved == '1' ): ?>	
+		<?php if ( $comment->comment_approved == '1' ): ?>
 		<li>
 			<article id="comment-<?php comment_ID() ?>">
 				<?php echo get_avatar( $comment ); ?>
@@ -95,13 +93,14 @@
 			</article>
 		<?php endif;
 	}
-
+    */
 
     /* ========================================================================================================================
 
     Site Last Updated - This will check the modified_date of all published posts and give you the most recent date.
 
     ======================================================================================================================== */
+
     function site_last_updated() {
         $recent = new WP_Query("showposts=1&orderby=modified&post_status=publish");
         if ( $recent->have_posts() ) {
@@ -115,12 +114,12 @@
             echo '';
     }
 
-
     /* ========================================================================================================================
 
     Popular Posts - This will track and display popular posts by views.
 
     ======================================================================================================================== */
+
     // Detect post view count and store it as a custom field for each post
     function af_set_post_views($postID) {
         $count_key = 'af_post_views_count';
@@ -148,7 +147,6 @@
     }
     add_action( 'wp_head', 'af_track_post_views');
 
-
     /* ========================================================================================================================
 
     Excerpt Limiter - This will limit the number of words in the excerpt
@@ -166,3 +164,19 @@
             echo implode(' ', $words);
         }
     }
+
+    /* ========================================================================================================================
+
+    Load Enqueued Scripts in the Footer - Automatically move JavaScript code to page footer, speeding up page loading time
+
+    ======================================================================================================================== */
+
+    function footer_enqueue_scripts() {
+        remove_action('wp_head', 'wp_print_scripts');
+        remove_action('wp_head', 'wp_print_head_scripts', 9);
+        remove_action('wp_head', 'wp_enqueue_scripts', 1);
+        add_action('wp_footer', 'wp_print_scripts', 5);
+        add_action('wp_footer', 'wp_enqueue_scripts', 5);
+        add_action('wp_footer', 'wp_print_head_scripts', 5);
+    }
+    add_action('after_setup_theme', 'footer_enqueue_scripts');
