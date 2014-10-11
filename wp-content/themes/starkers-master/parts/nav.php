@@ -18,7 +18,7 @@
         <ul class="site-nav-list">
             <li class="site-nav-item">
                 <a class="site-nav-link site-nav-logo-link" href="/">
-                    <span class="site-nav-span site-nav-text-span site-nav-first-primary-span">alertfocus.com</span>
+                    <span class="site-nav-span site-nav-text-span site-nav-first-primary-span">calmfocus.com</span>
                 </a>
             </li>
 
